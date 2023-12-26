@@ -1,0 +1,19 @@
+.homehero_gc_logo_main {
+  height: 300px;
+  width: 300px;
+}
+.homehero_gc_logo_inner {
+  width: 100%;
+  height: 100%;
+}
+
+.homehero_galaxychain_logos_main {
+  display: flex;
+  gap: 2rem;
+}
+
+.manufacturing_details_home_hero{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

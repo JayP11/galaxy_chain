@@ -1,0 +1,33 @@
+.Footer_main {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 3rem 0;
+  justify-content: space-around;
+  color: azure;
+}
+.links_sec_footer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+.links_sec_footer_inner {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.Galaxy_Chains_block {
+  display: flex;
+  gap: 0.9rem;
+  flex-direction: column;
+}
+.footer_ph_details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.footer_link_color,.link_decor{
+  color: azure;
+}

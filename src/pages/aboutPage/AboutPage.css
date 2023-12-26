@@ -1,0 +1,16 @@
+.AboutPage_main{
+    margin: 0  auto;
+    max-width: 1140px;
+    padding: 3rem 0;
+    padding-bottom: 4rem;
+    display: flex;
+    gap: 4rem;
+    flex-direction: column;
+}
+
+.about_intro_para_main{
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    font-size: 19px;
+}

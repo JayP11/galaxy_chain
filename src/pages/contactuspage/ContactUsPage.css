@@ -1,0 +1,26 @@
+.ContactUsPage_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 3rem 0;
+  padding-bottom: 6rem;
+}
+
+.ContactUsPage_form {
+  display: flex;
+  gap: 2.5rem;
+  /* width: 470px; */
+}
+
+.c_form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 50%;
+}
+
+.c-txt,
+.c-msg-txt {
+  padding: 0.4rem;
+  font-size: 16px;
+  border: 2px solid;
+}

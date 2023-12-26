@@ -1,0 +1,36 @@
+.Industries_We_Empower_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 3rem 0;
+}
+.industry_icon_main {
+  height: 60px;
+  width: 60px;
+}
+.industry_icon_inner {
+  height: 100%;
+  width: 100%;
+}
+
+.industry_box_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 2.4rem;
+}
+
+.industry_box_main {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  border: 3px solid;
+  border-radius: 12px;
+  width: 250px;
+  height: 100px;
+  justify-content: center;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.industry_box_main:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,37 @@
+.NumCountHome_main {
+  /* margin: 0 auto;
+    max-width: 1140px; */
+  padding: 3rem 0;
+}
+
+.card_count_top {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+.card_count_main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  border: 2.4px dotted;
+  padding: 2rem;
+  border-radius: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.card_count_main:hover {
+  background: orangered;
+  transform: scale(1.05);
+  border: 2.4px solid;
+}
+
+.count_icon_main {
+  height: 100px;
+  width: 100px;
+}
+.count_icon_inner {
+  height: 100%;
+  width: 100%;
+}
