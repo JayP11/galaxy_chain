@@ -5,7 +5,7 @@ const ContactUsPage = () => {
   return (
     <div className="ContactUsPage_main">
       {/* <div className="" style={{ marginBottom: "1rem" }}> */}
-      <div className="heading" >
+      <div className="heading">
         <h1>CONTACT US</h1>
       </div>
       <div className="underline"></div>
@@ -47,18 +47,18 @@ const ContactUsPage = () => {
             //   onChange={(e) => setdescription(e.target.value)}
           ></textarea>
         </form>
-        <div>
-          <iframe
-            style={{ border: "none", borderRadius: "10px" }}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14779.804027816699!2d70.7930374!3d22.1659369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca12b00ed20f%3A0xcbc672e57c682c8e!2sGalaxy%20Chains%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1703591604453!5m2!1sen!2sin"
-            width="530px"
-            height="370"
-            title="galaxychain"
-            // style="border:0;"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
+        <iframe
+          className="map_inner"
+          style={{ border: "none", borderRadius: "10px" }}
+          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14779.804027816699!2d70.7930374!3d22.1659369!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3959ca12b00ed20f%3A0xcbc672e57c682c8e!2sGalaxy%20Chains%20Pvt.%20Ltd.!5e0!3m2!1sen!2sin!4v1703591604453!5m2!1sen!2sin"
+          // width="530px"
+          // height="370"
+          // width="100%"
+          title="galaxychain"
+          // style="border:0;"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
       </div>
     </div>
   );

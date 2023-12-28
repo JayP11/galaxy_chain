@@ -47,6 +47,8 @@
 .industries_filter_title_main {
   display: flex;
   gap: 1rem;
+  justify-content: center;
+  padding: 0 1rem;
   flex-wrap: wrap;
 }
 
@@ -56,3 +58,17 @@
   padding: 0.7rem;
   cursor: pointer;
 }
+.propage_img_main {
+  height: 179px;
+}
+.propage_img_block {
+  padding: 3rem 0;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+/* padding: "3rem 0",
+            display: "grid",
+            gridTemplateColumns: "1fr 1fr 1fr 1fr",
+            gap: "1.4rem",
+            flexWrap: "wrap", */

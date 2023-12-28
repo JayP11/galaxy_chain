@@ -24,3 +24,23 @@
   font-size: 16px;
   border: 2px solid;
 }
+
+.map_inner {
+  height: 370px;
+  width: 50%;
+}
+
+
+@media screen and (max-width: 768px) {
+  .ContactUsPage_form {
+    align-items: center;
+    flex-direction: column;
+  }
+  .c_form {
+    width: 100%;
+  }
+
+  .map_inner {
+    width: 100%;
+  }
+}

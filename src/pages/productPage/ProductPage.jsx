@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const ProductPage = () => {
   const [getImages, setGetImages] = useState(1);
   const [getchild, setchild] = useState([]);
+  const [getindex, setindex] = useState();
 
   const data = [
     {
@@ -49,6 +50,46 @@ const ProductPage = () => {
     {
       industry: "Road Construction Machinery & Equipment Industries",
       list: [
+        {
+          id: 1,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 2,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 3,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 4,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 5,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 1,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 2,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 3,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 4,
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 5,
+          img: require("../../assets/Factory_img.png"),
+        },
         {
           id: 1,
           img: require("../../assets/Factory_img.png"),
@@ -138,6 +179,15 @@ const ProductPage = () => {
       ],
     },
   ];
+
+  const data1 = [
+    {
+      id: 1,
+      img: require("../../assets/Factory_img.png"),
+    },
+  ];
+
+  const [getcondition, SetCondition] = useState(false);
 
   return (
     <div className="ProductPage_main">
@@ -325,6 +375,7 @@ const ProductPage = () => {
                 className="industries_filter_title"
                 onClick={() => {
                   setchild(item.list);
+                  SetCondition(true);
                 }}>
                 <p>{item.industry}</p>
               </div>
@@ -332,49 +383,45 @@ const ProductPage = () => {
           })}
         </div>
 
-        <div
-          style={{
-            padding: "3rem 0",
-            display: "grid",
-            gridTemplateColumns: "1fr 1fr 1fr 1fr",
-            gap: "1.4rem",
-            flexWrap: "wrap",
-          }}>
-          {getchild.map((item, index) => {
-            return (
-              <div style={{ height: "200px" }}>
-                <img
-                  src={item.img}
-                  alt=""
-                  style={{ height: "100%", width: "100%", objectFit: "cover" }}
-                />
-              </div>
-            );
-          })}
+        <div className="propage_img_block">
+          {getcondition === true ? (
+            <>
+              {getchild.map((item, index) => {
+                return (
+                  <div className="propage_img_main">
+                    <img
+                      src={item.img}
+                      alt=""
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                );
+              })}
+            </>
+          ) : (
+            <>
+              {data1.map((item, index) => {
+                return (
+                  <div className="propage_img_main">
+                    <img
+                      src={item.img}
+                      alt=""
+                      style={{
+                        height: "100%",
+                        width: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                  </div>
+                );
+              })}
+            </>
+          )}
         </div>
-        {/* <div className="industries_filter_title_main">
-          <div className="industries_filter_title">
-            <p>LPG Bottling Plants</p>
-          </div>
-          <div className="industries_filter_title">
-            <p>Power Plants</p>
-          </div>
-          <div className="industries_filter_title">
-            <p>Cement Industries</p>
-          </div>
-          <div className="industries_filter_title">
-            <p>Fertilizer Industries</p>
-          </div>
-          <div className="industries_filter_title">
-            <p>Palm oil Industries</p>
-          </div>
-          <div className="industries_filter_title">
-            <p>Steel Industries</p>
-          </div>
-          <div className="industries_filter_title">
-            <p>Road Construction Machinery & Equipment</p>
-          </div>
-        </div> */}
       </div>
     </div>
   );
