@@ -5,6 +5,7 @@
   padding: 3rem 0;
   justify-content: space-around;
   color: azure;
+  flex-wrap: wrap;
 }
 .links_sec_footer {
   display: flex;
@@ -28,6 +29,15 @@
   gap: 0.5rem;
 }
 
-.footer_link_color,.link_decor{
+.footer_link_color,
+.link_decor {
   color: azure;
+}
+
+@media screen and (max-width: 800px) {
+  .Footer_main {
+    gap: 3rem;
+    justify-content: space-between;
+    margin: 0 3rem;
+  }
 }

@@ -1,0 +1,31 @@
+.RollerChains_main {
+  /* margin: 0 auto;
+  max-width: 1140px; */
+  padding: 4rem 0;
+}
+
+.RollerChains_images_main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.RollerChains_chart_main {
+  margin: 2rem;
+  border: 2px solid;
+}
+.RollerChains_chart_inner {
+  height: 100%;
+  width: 100%;
+}
+
+.RollerChains_img_main {
+  width: 300px;
+  transform: rotate(180deg);
+}
+
+.RollerChains_img_inner {
+  height: 100%;
+  width: 100%;
+}

@@ -8,7 +8,7 @@
 .ContactUsPage_form {
   display: flex;
   gap: 2.5rem;
-  /* width: 470px; */
+  padding: 0 2rem;
 }
 
 .c_form {

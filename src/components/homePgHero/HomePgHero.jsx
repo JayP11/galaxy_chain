@@ -49,26 +49,17 @@ const HomePgHero = () => {
             </h1>
           </div>
           <div>
-            <h1
-              style={{
-                color: "rgb(23 47 166)",
-                fontStyle: "italic",
-                fontWeight: "900",
-                fontSize: "60px",
-                textShadow: "2px 2px #838383",
-              }}>
+            <h1 className="INDUSTRIAL_ROLLER_CHAINS_H1">
               INDUSTRIAL ROLLER CHAINS
             </h1>
           </div>
           <div>
-            <h1
-              style={{
-                color: "darkorange",
-                fontWeight: "900",
-                fontSize: "50px",
-                fontStyle: "italic",
-                textShadow: "2px 2px #838383",
-              }}>
+            <h1 className="CUSTOMIZED_CONVEYOR_CHAINS_H1">
+              {/* // color: "darkorange",
+                // fontWeight: "900",
+                // fontSize: "50px",
+                // fontStyle: "italic",
+                // textShadow: "2px 2px #838383", */}
               & CUSTOMIZED CONVEYOR CHAINS.
             </h1>
           </div>

@@ -7,8 +7,8 @@ const Core_Values_Purpose = () => {
     <div className="Core_Values_Purpose_main">
       <div>
         <div className="heading_values_purpose">
-          <h1>Core Purpose &</h1>
-          <h1>Core Values </h1>
+          <h1>Core Purpose & Core Values</h1>
+          {/* <h1>Core Values </h1> */}
         </div>
         <div>
           <div className="underline"></div>
@@ -24,9 +24,9 @@ const Core_Values_Purpose = () => {
         <div className="core_values_box_inner">
           <div className="core_values_icon_circle_main">
             <img
+              className="quality_assurance_img_inner"
               src={images.quality_assurance}
               alt="quality_assurance"
-              style={{ height: "80px", width: "80px" }}
             />
           </div>
           <div className="vertical_main">
@@ -98,9 +98,10 @@ const Core_Values_Purpose = () => {
         <div className="core_values_box_inner">
           <div className="core_values_icon_circle_main">
             <img
+              className="mutual_growth_img"
               src={images.mutual_growth}
               alt="quality_assurance"
-              style={{ height: "70px", width: "70px" }}
+            
             />
           </div>
           <div className="vertical_main">

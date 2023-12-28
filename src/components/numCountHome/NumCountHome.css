@@ -35,3 +35,21 @@
   height: 100%;
   width: 100%;
 }
+
+@media screen and (max-width: 1300px) {
+  .card_count_top {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (max-width: 990px) {
+  .card_count_top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+
+@media screen and (max-width: 655px) {
+  .card_count_top {
+    grid-template-columns: 1fr;
+  }
+}

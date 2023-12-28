@@ -13,7 +13,27 @@ const CategorySliderHome = () => {
     autoplaySpeed: 2500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    autoplay: true,
+    autoplay: false,
+    responsive: [
+      {
+        breakpoint: 1240,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1190,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: "unslick",
+      },
+    ],
   };
 
   return (

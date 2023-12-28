@@ -1,6 +1,7 @@
 import Factory_img from "../assets/Factory_img.png";
 import gc_logo from "../assets/gc_logo.png";
 import gconveyors from "../assets/gconveyors.png";
+import bg_img from "../assets/bg_img.jpeg";
 
 import quality_assurance from "../assets/quality_assurance.png";
 import customer_satisfaction from "../assets/customer_satisfaction.png";
@@ -30,7 +31,11 @@ import Manufacturing_Capacity from "../assets/Manufacturing_Capacity.png";
 import Manufacturing_Unitof from "../assets/Manufacturing_Unitof.png";
 import experience from "../assets/experience.png";
 
+import RollerChains from "../assets/RollerChains.png";
+import RollerChains_img from "../assets/RollerChains_img.png";
+
 export default {
+  bg_img,
   Factory_img,
   gc_logo,
   gconveyors,
@@ -60,4 +65,6 @@ export default {
   Manufacturing_Capacity,
   Manufacturing_Unitof,
   experience,
+  RollerChains,
+  RollerChains_img,
 };

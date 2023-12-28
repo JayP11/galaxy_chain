@@ -15,7 +15,9 @@
 .industry_box_top {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 2.4rem;
+  gap: 2rem;
+  /* row-gap: 2.4rem; */
+  justify-items: center;
 }
 
 .industry_box_main {
@@ -24,7 +26,8 @@
   gap: 0.7rem;
   border: 3px solid;
   border-radius: 12px;
-  width: 250px;
+  width: 100%;
+  /* width: 250px; */
   height: 100px;
   justify-content: center;
   text-align: center;
@@ -33,4 +36,32 @@
 
 .industry_box_main:hover {
   transform: scale(1.05);
+}
+
+@media screen and (max-width: 1175px) {
+  .industry_box_top {
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 2rem;
+  }
+}
+@media screen and (max-width: 900px) {
+  .industry_box_top {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 555px) {
+  .industry_box_main {
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .industry_icon_main {
+    height: 45px;
+    width: 45px;
+  }
+  .industry_box_top {
+    margin: 1rem;
+  }
+  .industry_box_top {
+    gap: 1rem;
+  }
 }
