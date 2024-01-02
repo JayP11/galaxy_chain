@@ -28,7 +28,12 @@ const AboutPage = () => {
         }}>
         <div className="AboutPage_main">
           <div
-            style={{ display: "flex", gap: "2rem", justifyContent: "center" }}>
+            style={{
+              display: "flex",
+              gap: "2rem",
+              justifyContent: "center",
+              flexWrap: "wrap",
+            }}>
             <div className="About_certificate_main">
               <div>
                 <div className="heading" style={{ color: "#8b0000" }}>

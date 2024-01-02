@@ -15,7 +15,7 @@ import ProductPage from "./pages/productPage/ProductPage";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="galaxychainfront">
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />}></Route>

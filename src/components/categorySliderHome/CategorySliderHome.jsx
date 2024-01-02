@@ -1,7 +1,7 @@
 import React from "react";
 import "./CategorySliderHome.css";
-import Slider from "react-slick";
 import images from "../../constants/images";
+import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
@@ -18,20 +18,23 @@ const CategorySliderHome = () => {
       {
         breakpoint: 1240,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
         },
       },
       {
         breakpoint: 1190,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 800,
-        settings: "unslick",
+        breakpoint: 760,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
       },
     ],
   };
@@ -149,7 +152,8 @@ const CategorySliderHome = () => {
               <button className="See_More_btn">See More</button>
             </div>
           </div>
-        </Slider>{" "}
+        </Slider>
+      
       </div>
     </div>
   );

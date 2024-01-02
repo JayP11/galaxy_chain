@@ -9,7 +9,11 @@
   width: 100%;
   object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-top-left-radius: 18px;
+  border-top-right-radius: 18px;
+  /* transition: transform 0.3s ease; */
 }
+
 .products_page_img_main {
   height: 200px;
   width: 100%;
@@ -35,6 +39,12 @@
   gap: 1rem;
   border: 1px solid;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.products_page_card_main:hover {
+  transform: scale(1.05);
 }
 
 .products_page_card_desc_main {
@@ -53,10 +63,12 @@
 }
 
 .industries_filter_title {
-  background: rgb(188 37 28);
+  /* background: rgb(188 37 28); */
   color: white;
-  padding: 0.7rem;
+  padding: 0.5rem 1rem;
+  /* padding: 0.7rem; */
   cursor: pointer;
+  border-radius: 10px;
 }
 .propage_img_main {
   height: 179px;
@@ -66,9 +78,23 @@
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 /* padding: "3rem 0",
             display: "grid",
             gridTemplateColumns: "1fr 1fr 1fr 1fr",
             gap: "1.4rem",
             flexWrap: "wrap", */
+
+@media screen and (max-width: 580px) {
+  .propage_img_block {
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+
+  .propage_img_main {
+    min-width: 250px;
+  }
+}

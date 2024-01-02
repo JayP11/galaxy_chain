@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 const ProductPage = () => {
   const [getImages, setGetImages] = useState(1);
   const [getchild, setchild] = useState([]);
+  const [getColor, setColor] = useState(1);
   const [getindex, setindex] = useState();
 
   const data = [
@@ -372,9 +373,14 @@ const ProductPage = () => {
           {data.map((item) => {
             return (
               <div
+                style={{
+                  background: item.id == getColor ? "#8b0000" : "#e60000",
+                }}
                 className="industries_filter_title"
                 onClick={() => {
                   setchild(item.list);
+                  setColor(item.id);
+
                   SetCondition(true);
                 }}>
                 <p>{item.industry}</p>

@@ -13,7 +13,9 @@
   background: white;
   color: black;
   padding: 2rem;
-  border: 3px solid;
+  /* border: 3px solid; */
+    box-shadow: 14px 8px 16px 10px rgba(0, 0, 0, 0.5);
+
   border-radius: 20px;
 }
 
@@ -30,7 +32,8 @@
   border-radius: 20px;
   width: 400px;
   color: black;
-  border: 3px solid;
+  /* border: 3px solid; */
+  box-shadow: 14px 8px 16px 0px rgba(0, 0, 0, 0.5);
   transition: transform 0.3s ease;
 }
 
@@ -60,4 +63,15 @@
 .About_certificate_list_h3,
 .About_product_range_list_h3 {
   letter-spacing: 1px;
+}
+
+@media screen and (max-width: 1210px) {
+  .about_galaxy_chain_main,
+  .about_galaxy_conveyor_main {
+    margin: 0 2rem;
+  }
+  .About_certificate_main {
+    width: 100%;
+    margin: 0 2rem;
+  }
 }

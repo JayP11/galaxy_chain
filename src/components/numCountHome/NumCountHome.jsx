@@ -192,7 +192,7 @@ const NumCountHome = () => {
                   alt="experience"
                   className="count_icon_inner"
                 />
-              </div>{" "}
+              </div>
               {isCounterStarted && (
                 <div style={{ fontSize: "40px", fontWeight: "900" }}>
                   <CountUp start={0} end={33} duration={2.75}></CountUp> +
