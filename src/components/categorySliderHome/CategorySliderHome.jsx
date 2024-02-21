@@ -8,7 +8,7 @@ import { BsArrowRight } from "react-icons/bs";
 
 const CategorySliderHome = () => {
   return (
-    <div>
+    <div style={{ background: "#f6f6f6" }}>
       <div className="CategorySliderHome_main">
         <div className="heading">
           <h1 style={{ color: "var(--color-blue)", fontWeight: "800" }}>

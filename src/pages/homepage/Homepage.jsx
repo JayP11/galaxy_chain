@@ -11,8 +11,8 @@ const Homepage = () => {
     <div>
       <HomePgHero />
       <Core_Values_Purpose />
-      <Industries_We_Empower />
       <NumCountHome />
+      <Industries_We_Empower />
       <CategorySliderHome />
       <GetQuoteHome />
     </div>

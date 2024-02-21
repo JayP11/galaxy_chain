@@ -14,7 +14,7 @@ const NumCountHome = () => {
 
     const startCounterOnScroll = () => {
       // Replace the following line with the actual scroll threshold you want
-      if (scrollPosition > /* Your Scroll Threshold */ 1700) {
+      if (scrollPosition > /* Your Scroll Threshold */ 700) {
         setCounterStarted(true);
         // Remove the scroll event listener once the counter is started (optional)
         window.removeEventListener("scroll", startCounterOnScroll);

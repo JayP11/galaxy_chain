@@ -54,7 +54,7 @@ h1 {
   margin: 2rem 0px;
   margin-bottom: 0px;
   color: var(--color-blue);
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 
 .link_decor_footer {

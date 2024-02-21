@@ -39,6 +39,9 @@ const Footer = () => {
                 <h4 className="footer_link_color">About</h4>
               </Link>
               <Link to="/ProductPage" className="link_decor_footer">
+                <h4 className="footer_link_color">Media</h4>
+              </Link>
+              <Link to="/ProductPage" className="link_decor_footer">
                 <h4 className="footer_link_color">Products</h4>
               </Link>
               <div style={{ marginTop: "4rem" }} className="link_decor_footer">
