@@ -4,6 +4,7 @@ import Core_Values_Purpose from "../../components/core_values_purpose/Core_Value
 import Industries_We_Empower from "../../components/industries_we_empower/Industries_We_Empower";
 import NumCountHome from "../../components/numCountHome/NumCountHome";
 import CategorySliderHome from "../../components/categorySliderHome/CategorySliderHome";
+import GetQuoteHome from "../../components/getQuoteHome/GetQuoteHome";
 
 const Homepage = () => {
   return (
@@ -13,6 +14,7 @@ const Homepage = () => {
       <Industries_We_Empower />
       <NumCountHome />
       <CategorySliderHome />
+      <GetQuoteHome />
     </div>
   );
 };

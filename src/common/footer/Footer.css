@@ -4,7 +4,7 @@
   max-width: 1140px;
   padding: 3rem 0;
   justify-content: space-around;
-  color: azure;
+  /* color: azure; */
   flex-wrap: wrap;
 }
 .links_sec_footer {
@@ -29,10 +29,10 @@
   gap: 0.5rem;
 }
 
-.footer_link_color,
+/* .footer_link_color,
 .link_decor {
   color: azure;
-}
+} */
 
 @media screen and (max-width: 800px) {
   .Footer_main {

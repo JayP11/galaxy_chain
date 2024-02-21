@@ -5,12 +5,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
-  /* margin: 0 2rem; */
-  /* box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px; */
+  height: 80px;
 }
 .nav_link_h3 {
-  color: red;
+  color: var(--color-gray);
 }
 .navbar_links_main {
   display: flex;
@@ -97,9 +95,6 @@
 }
 
 .mobile-nav-main {
-  /* max-width: 550px; */
-  /* background-color: yellow; */
-  /* background-color: #fede00; */
   padding: 2rem 1rem 1rem 1rem;
 }
 
@@ -114,7 +109,7 @@
 }
 
 .mobile-nav-link {
-  color: red;
+  color: var(--color-gray);
   font-size: 16px;
   font-weight: 600;
   text-decoration: none;

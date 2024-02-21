@@ -1,12 +1,12 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
 import images from "../../constants/images";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
-
+  const location = useLocation();
   return (
     <div style={{ boxShadow: "rgba(0, 0, 0, 0.2) 0px 18px 50px -10px" }}>
       <div className="nav-main-nav">
@@ -21,49 +21,95 @@ const Navbar = () => {
           </Link>
           <div className="navbar_links_main">
             <div className="link_decor_nav">
-              <Link to="/">
-                <h3 className="nav_link_h3">Home</h3>
+              <Link
+                to="/"
+                className="nav_link_h3"
+                style={{
+                  color:
+                    location.pathname === "/"
+                      ? "var(--color-blue)"
+                      : "var(--color-gray)",
+                  fontWeight: "600",
+                }}
+              >
+                Home
               </Link>
             </div>
             <div className="link_decor_nav">
-              <Link to="/About">
-                <h3 className="nav_link_h3">About</h3>
+              <Link
+                to="/About"
+                className="nav_link_h3"
+                style={{
+                  color:
+                    location.pathname === "/About"
+                      ? "var(--color-blue)"
+                      : "var(--color-gray)",
+                  fontWeight: "600",
+                }}
+              >
+                About
               </Link>
             </div>
             <div className="dropdown">
-              <Link to="/ProductPage">
-                <button className="dropbtn">
+              <Link
+                to="/ProductPage"
+                className="link_decor_nav nav_link_h3"
+                style={{
+                  color:
+                    location.pathname === "/ProductPage"
+                      ? "var(--color-blue)"
+                      : "var(--color-gray)",
+                  fontWeight: "600",
+                }}
+              >
+                Products
+                {/* <button className="dropbtn">
+                  Products
                   <h3
                     style={{ fontSize: "18px" }}
-                    className="link_decor_nav nav_link_h3">
+                    className="link_decor_nav nav_link_h3"
+                  >
                     Products
                   </h3>
-                </button>
+                </button> */}
               </Link>
               <div className="dropdown-content">
-                <Link to="/RollerChains" style={{ color: "red" }}>
-                  Roller Chains
-                </Link>
-                <Link to="/BushChains" style={{ color: "red" }}>
-                  Bush Chains
-                </Link>
-                <Link to="/ExtendedPitchChains" style={{ color: "red" }}>
-                  Extended Pitch Chains
-                </Link>
-                <Link to="/LeafChains" style={{ color: "red" }}>
-                  Leaf Chains
-                </Link>
-                <Link to="/AttachmentChains" style={{ color: "red" }}>
-                  Attachment Chains
-                </Link>
-                <Link to="/AgricultureChains" style={{ color: "red" }}>
-                  Agriculture Chains
-                </Link>
+                <Link to="/RollerChains">Roller Chains</Link>
+                <Link to="/BushChains">Bush Chains</Link>
+                <Link to="/ExtendedPitchChains">Extended Pitch Chains</Link>
+                <Link to="/LeafChains">Leaf Chains</Link>
+                <Link to="/AttachmentChains">Attachment Chains</Link>
+                <Link to="/AgricultureChains">Agriculture Chains</Link>
               </div>
             </div>
             <div className="link_decor_nav">
-              <Link to="/Contact">
-                <h3 className="nav_link_h3">Contact</h3>
+              <Link
+                to="/"
+                className="nav_link_h3"
+                style={{
+                  color:
+                    location.pathname === "/q"
+                      ? "var(--color-blue)"
+                      : "var(--color-gray)",
+                  fontWeight: "600",
+                }}
+              >
+                Media
+              </Link>
+            </div>
+            <div className="link_decor_nav">
+              <Link
+                to="/Contact"
+                className="nav_link_h3"
+                style={{
+                  color:
+                    location.pathname === "/Contact"
+                      ? "var(--color-blue)"
+                      : "var(--color-gray)",
+                  fontWeight: "600",
+                }}
+              >
+                Contact
               </Link>
             </div>
           </div>
@@ -88,7 +134,8 @@ const Navbar = () => {
                 <Link
                   to={"/"}
                   onClick={() => setToggleMenu(false)}
-                  className="mobile-nav-link">
+                  className="mobile-nav-link"
+                >
                   Home
                 </Link>
               </li>
@@ -129,7 +176,8 @@ const Navbar = () => {
                 <Link
                   to={"/Contact"}
                   // onClick={() => setToggleMenu(false)}
-                  className="mobile-nav-link">
+                  className="mobile-nav-link"
+                >
                   Contact
                 </Link>
               </li>

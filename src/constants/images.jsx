@@ -33,6 +33,23 @@ import experience from "../assets/experience.png";
 
 import RollerChains from "../assets/RollerChains.png";
 import RollerChains_img from "../assets/RollerChains_img.png";
+import Chainimg from "../assets/Chainimg.jpeg";
+import RollerChain1 from "../assets/RollerChain1.png";
+import RollerChain2 from "../assets/RollerChain2.png";
+import RollerChain3 from "../assets/RollerChain3.png";
+import RollerChain4 from "../assets/RollerChain4.png";
+
+import cat_roller from "../assets/cat_roller.png";
+import cat_agriculture from "../assets/cat_agriculture.png";
+import cat_leaf from "../assets/cat_leaf.png";
+import cat_bush from "../assets/cat_bush.png";
+import cat_extended from "../assets/cat_extended.png";
+import core_purpose_head from "../assets/core_purpose_head_img.png";
+import core_img1 from "../assets/core_img1.png";
+import core_img2 from "../assets/core_img2.png";
+import core_img3 from "../assets/core_img3.png";
+import core_img4 from "../assets/core_img4.png";
+import core_img5 from "../assets/core_img5.png";
 
 export default {
   bg_img,
@@ -67,4 +84,20 @@ export default {
   experience,
   RollerChains,
   RollerChains_img,
+  Chainimg,
+  RollerChain1,
+  RollerChain2,
+  RollerChain3,
+  RollerChain4,
+  cat_roller,
+  cat_agriculture,
+  cat_leaf,
+  cat_bush,
+  cat_extended,
+  core_purpose_head,
+  core_img1,
+  core_img2,
+  core_img3,
+  core_img4,
+  core_img5,
 };

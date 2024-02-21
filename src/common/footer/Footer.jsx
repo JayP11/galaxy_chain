@@ -13,7 +13,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div style={{ background: "#A32C25" }}>
+    <div>
       <div className="Footer_main">
         {/* <div className="heading">
         <h1>Galaxy Chains pvt. ltd.</h1><br/>
@@ -21,28 +21,39 @@ const Footer = () => {
       </div> */}
         <div>
           <div className="links_sec_footer">
-            <h3 style={{ color: "whitesmoke" }}>Quick Links</h3>
+            <h3>Quick Links</h3>
             <div
               className="underline"
               style={{
                 marginLeft: "0px",
                 marginTop: "0px",
                 marginBottom: "1rem",
-              }}></div>
+              }}
+            ></div>
 
             <div className="links_sec_footer_inner">
               <Link to="/" className="link_decor_footer">
                 <h4 className="footer_link_color">Home</h4>
               </Link>
-              <Link to="/Portfolio" className="link_decor_footer">
+              <Link to="/About" className="link_decor_footer">
                 <h4 className="footer_link_color">About</h4>
               </Link>
-              <Link to="/Products" className="link_decor_footer">
+              <Link to="/ProductPage" className="link_decor_footer">
                 <h4 className="footer_link_color">Products</h4>
               </Link>
-              <Link to="contact" className="link_decor_footer">
-                <h4 className="footer_link_color">Contact us</h4>
-              </Link>
+              <div style={{ marginTop: "4rem" }} className="link_decor_footer">
+                <Link
+                  to="/contact"
+                  className="btn"
+                  style={{
+                    background: "var(--color-blue)",
+                    padding: "10px 43px",
+                  }}
+                >
+                  Get Quote
+                </Link>
+                {/* <h4 className="footer_link_color">Contact us</h4> */}
+              </div>
             </div>
           </div>
         </div>
@@ -56,7 +67,8 @@ const Footer = () => {
               marginLeft: "0px",
               marginTop: "0px",
               marginBottom: "1rem",
-            }}></div>
+            }}
+          ></div>
 
           <div>
             <p>
@@ -68,39 +80,46 @@ const Footer = () => {
           </div>
           <div className="footer_ph_details">
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
-                  href="tel:912827252217"
-                  className="link_decor footer_link_color">
-                  +91 90990 40407
+                  href="tel:919099932799
+"
+                  className="link_decor footer_link_color"
+                >
+                  +91 90999 32799
                 </a>
                 &nbsp; /&nbsp;
                 <a
                   href="tel:0281252218"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   +0281 252218
                 </a>
               </div>
             </div>
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
                   href="tel:912827254095"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   +91 912827 254095
                 </a>
               </div>
             </div>
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <MdEmail />
               <a href="mailto:galaxy@galaxychains.com" className="link_decor">
                 galaxy@galaxychains.com
@@ -122,7 +141,8 @@ const Footer = () => {
               marginLeft: "0px",
               marginTop: "0px",
               marginBottom: "1rem",
-            }}></div>
+            }}
+          ></div>
           <div>
             <p>
               Shapar Industrial Zone, <br />
@@ -133,43 +153,50 @@ const Footer = () => {
           </div>
           <div className="footer_ph_details">
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
-                  href="tel:912827252217"
-                  className="link_decor footer_link_color">
-                  +91 90990 40407
+                  href="tel:919099932799"
+                  className="link_decor footer_link_color"
+                >
+                  +91 90999 32799
                 </a>
                 &nbsp; /&nbsp;
                 <a
                   href="tel:0281252218"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   +0281 252218
                 </a>
               </div>
             </div>
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
                   href="tel:912827254095"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   +91 912827 254095
                 </a>
               </div>
             </div>
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <MdEmail />
               <a
                 href="mailto:galaxy@galaxyconveyors.com"
-                className="link_decor">
+                className="link_decor"
+              >
                 galaxy@galaxyconveyors.com
               </a>
             </div>

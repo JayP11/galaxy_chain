@@ -1,0 +1,18 @@
+.GetQuoteHome_main {
+  background: var(--color-blue);
+  display: flex;
+  justify-content: center;
+  color: var(--color-lightgray);
+  min-height: 300px;
+  align-items: center;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.GetQuoteHome_h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  max-width: 400px;
+  text-align: center;
+  font-size: 30px;
+}

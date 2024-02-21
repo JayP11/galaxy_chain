@@ -1,4 +1,44 @@
-.homehero_gc_logo_main {
+.HomePgHero_main {
+  display: flex;
+}
+.HomePgHero_one {
+  background: linear-gradient(
+    90deg,
+    rgba(13, 69, 152, 1) 100%,
+    rgba(0, 212, 255, 1) 100%
+  );
+
+  /* background: var(--color_blue_shade); */
+  color: aliceblue;
+  width: 50%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+.HomePgHero_two {
+  background: var(--color_orange_shade);
+  color: aliceblue;
+  width: 50%;
+  height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 768px) {
+  .HomePgHero_main {
+    flex-direction: column;
+  }
+  .HomePgHero_one,
+  .HomePgHero_two {
+    width: 100%;
+  }
+}
+
+/* .homehero_gc_logo_main {
   height: 300px;
   width: 300px;
 }
@@ -44,4 +84,4 @@
   }
 }
 
-@media screen and (max-width: 990px) {}
+@media screen and (max-width: 990px) {} */

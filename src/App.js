@@ -12,6 +12,7 @@ import ExtendedPitchChains from "./pages/extendedPitchChains/ExtendedPitchChains
 import AttachmentChains from "./pages/attachmentChains/AttachmentChains";
 import AgricultureChains from "./pages/agricultureChains/AgricultureChains";
 import ProductPage from "./pages/productPage/ProductPage";
+import FooterDown from "./common/footerDown/FooterDown";
 
 function App() {
   return (
@@ -26,14 +27,17 @@ function App() {
         <Route path="/BushChains" element={<BushChains />}></Route>
         <Route
           path="/ExtendedPitchChains"
-          element={<ExtendedPitchChains />}></Route>
+          element={<ExtendedPitchChains />}
+        ></Route>
         <Route path="/LeafChains" element={<LeafChains />}></Route>
         <Route path="/AttachmentChains" element={<AttachmentChains />}></Route>
         <Route
           path="/AgricultureChains"
-          element={<AgricultureChains />}></Route>
+          element={<AgricultureChains />}
+        ></Route>
       </Routes>
       <Footer />
+      <FooterDown />
     </BrowserRouter>
   );
 }
