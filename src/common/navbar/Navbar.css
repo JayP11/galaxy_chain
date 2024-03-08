@@ -7,35 +7,26 @@
   justify-content: space-between;
   height: 80px;
 }
-.nav_link_h3 {
-  color: var(--color-gray);
-}
 .navbar_links_main {
   display: flex;
   gap: 1.4rem;
 }
 
 .link_decor_nav {
-  text-decoration: none;
-  color: red;
+  text-decoration: none !important;
   transition: all ease-in-out 0.4s;
   cursor: pointer;
-
-  /* underline decor  */
   background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
     no-repeat;
   transition: 0.5s;
+  padding: 5px;
 }
 .link_decor_nav:hover {
   --d: 100%;
 }
-
 /*  */
 .dropbtn {
   background-color: white !important;
-  /* color: white; */
-  /* padding: 16px; */
-  /* font-size: 16px; */
   border: none;
 }
 
@@ -53,6 +44,7 @@
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
   border-radius: 10px;
+  top: 25px;
 }
 
 .dropdown-content a {

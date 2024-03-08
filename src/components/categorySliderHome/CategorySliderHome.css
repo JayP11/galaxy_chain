@@ -102,7 +102,9 @@
 .cat_desc_part {
   background-color: var(--color-blue);
   width: 100%;
-  padding: 3rem 1rem 2rem 2rem;
+  padding: 3rem 2rem 2rem 2rem;
+  text-align: center;
+  height: 150px;
   transform: translateY(-20px);
 }
 

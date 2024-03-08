@@ -53,7 +53,7 @@ const Footer = () => {
                     padding: "10px 43px",
                   }}
                 >
-                  Get Quote
+                  GET IN TOUCH
                 </Link>
                 {/* <h4 className="footer_link_color">Contact us</h4> */}
               </div>

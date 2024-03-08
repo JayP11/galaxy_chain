@@ -7,7 +7,7 @@ const GetQuoteHome = () => {
     <div className="GetQuoteHome_main">
       <h1 className="GetQuoteHome_h1">Looking for cusomized Roller chains</h1>
       <Link to="/contact" className="btn">
-        Get Quote
+        Get a Quote
       </Link>
     </div>
   );

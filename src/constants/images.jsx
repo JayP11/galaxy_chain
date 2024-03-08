@@ -53,6 +53,7 @@ import core_img5 from "../assets/core_img5.png";
 import home_slider_img1 from "../assets/home_slider_img1.jpg";
 import home_slider_img2 from "../assets/home_slider_img2.webp";
 import home_slider_img3 from "../assets/home_slider_img3.jpg";
+import RollerBritish from "../assets/RollerBritish.pdf";
 
 export default {
   bg_img,
@@ -106,4 +107,5 @@ export default {
   home_slider_img1,
   home_slider_img2,
   home_slider_img3,
+  RollerBritish,
 };

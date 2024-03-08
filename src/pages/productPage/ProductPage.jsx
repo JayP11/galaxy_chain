@@ -185,6 +185,7 @@ const ProductPage = () => {
     {
       id: 1,
       name: "Roller Chains",
+      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -207,6 +208,7 @@ const ProductPage = () => {
     {
       id: 2,
       name: "Leaf Chains",
+      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -221,6 +223,7 @@ const ProductPage = () => {
     {
       id: 3,
       name: "Extended Pitch Chains",
+      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -235,6 +238,7 @@ const ProductPage = () => {
     {
       id: 4,
       name: "Agriculture & Harvester Chains",
+      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -253,6 +257,7 @@ const ProductPage = () => {
     {
       id: 5,
       name: "Other Chains",
+      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -279,21 +284,25 @@ const ProductPage = () => {
       id: 1,
       img: require("../../assets/RollerChain1.png"),
       name: "Single Strand - Simplex",
+      pdf: require("../../assets/RollerBritish.pdf"),
     },
     {
       id: 2,
       img: require("../../assets/RollerChain2.png"),
       name: "Single Strand - Simplex",
+      pdf: require("../../assets/RollerBritish.pdf"),
     },
     {
       id: 3,
       img: require("../../assets/RollerChain3.png"),
       name: "Single Strand - Simplex",
+      pdf: require("../../assets/RollerBritish.pdf"),
     },
     {
       id: 4,
       img: require("../../assets/RollerChain4.png"),
       name: "Single Strand - Simplex",
+      pdf: require("../../assets/RollerBritish.pdf"),
     },
   ];
 
@@ -309,8 +318,7 @@ const ProductPage = () => {
         </div>
         <div
           className="industries_filter_title_main"
-          style={{ padding: "1rem 0px 4px 0px" }}
-        >
+          style={{ padding: "1rem 0px 4px 0px" }}>
           {category.map((item) => {
             return (
               <div
@@ -331,8 +339,7 @@ const ProductPage = () => {
                   setchild(item.list);
                   setColor(item.id);
                   SetCondition(true);
-                }}
-              >
+                }}>
                 <p>{item.name}</p>
               </div>
             );
@@ -367,18 +374,21 @@ const ProductPage = () => {
                         }}
                       />
                     </div>
-                    <div className="propage_name_main">
+                    <a
+                      href={item.pdf}
+                      target="_blank"
+                      download
+                      className="propage_name_main">
                       <div>Single Strand - Simplex</div>
                       <div
                         style={{
                           display: "flex",
                           alignItems: "center",
                           gap: " 0.2rem",
-                        }}
-                      >
+                        }}>
                         more info <FaAnglesRight />
                       </div>
-                    </div>
+                    </a>
                   </div>
                 );
               })}
@@ -387,33 +397,34 @@ const ProductPage = () => {
             <>
               {category1.map((item, index) => {
                 return (
-                  <div>
-                    <div className="propage_img_main">
-                      <img
-                        src={item.img}
-                        alt=""
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          objectFit: "cover",
-                        }}
-                      />
-                    </div>
-                    <div className="propage_name_main">
-                      <div>
-                        <span>Single Strand - Simplex</span>
+                  <>
+                    <a href={item.pdf} target="_blank" download>
+                      <div className="propage_img_main">
+                        <img
+                          src={item.img}
+                          alt=""
+                          style={{
+                            height: "100%",
+                            width: "100%",
+                            objectFit: "cover",
+                          }}
+                        />
                       </div>
-                      <div
-                        style={{
-                          display: "flex",
-                          alignItems: "center",
-                          gap: " 0.2rem",
-                        }}
-                      >
-                        more info <FaAnglesRight />
+                      <div className="propage_name_main">
+                        <div>
+                          <span>Single Strand - Simplex</span>
+                        </div>
+                        <div
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            gap: " 0.2rem",
+                          }}>
+                          more info <FaAnglesRight />
+                        </div>
                       </div>
-                    </div>
-                  </div>
+                    </a>
+                  </>
                 );
               })}
             </>

@@ -12,7 +12,6 @@ const Navbar = () => {
       <div className="nav-main-nav">
         <nav className="Navbar_main">
           <Link to="/" style={{ height: "100px", width: "100px" }}>
-            {/* <h1>Logo</h1> */}
             <img
               src={images.gc_logo}
               alt=""
@@ -26,12 +25,10 @@ const Navbar = () => {
                 className="nav_link_h3"
                 style={{
                   color:
-                    location.pathname === "/"
-                      ? "var(--color-blue)"
-                      : "var(--color-gray)",
-                  fontWeight: "600",
-                }}
-              >
+                    location.pathname === "/" ? "var(--color-blue)" : "black",
+                  // fontWeight: "600",
+                  fontWeight: location.pathname === "/" ? "600" : "500",
+                }}>
                 Home
               </Link>
             </div>
@@ -43,25 +40,26 @@ const Navbar = () => {
                   color:
                     location.pathname === "/About"
                       ? "var(--color-blue)"
-                      : "var(--color-gray)",
-                  fontWeight: "600",
-                }}
-              >
+                      : "black",
+                  fontWeight: location.pathname === "/About" ? "600" : "500",
+                }}>
                 About
               </Link>
             </div>
-            <div className="dropdown">
+            <div className="dropdown" style={{ display: "flex" }}>
               <Link
                 to="/ProductPage"
-                className="link_decor_nav nav_link_h3"
+                // className="link_decor_nav"
                 style={{
                   color:
                     location.pathname === "/ProductPage"
                       ? "var(--color-blue)"
-                      : "var(--color-gray)",
-                  fontWeight: "600",
-                }}
-              >
+                      : "black",
+                  fontWeight:
+                    location.pathname === "/ProductPage" ? "600" : "500",
+                  display: "flex",
+                  alignItems: "center",
+                }}>
                 Products
                 {/* <button className="dropbtn">
                   Products
@@ -88,12 +86,10 @@ const Navbar = () => {
                 className="nav_link_h3"
                 style={{
                   color:
-                    location.pathname === "/q"
-                      ? "var(--color-blue)"
-                      : "var(--color-gray)",
-                  fontWeight: "600",
-                }}
-              >
+                    location.pathname === "/q" ? "var(--color-blue)" : "black",
+                  // fontWeight: "600",
+                  fontWeight: location.pathname === "/q" ? "600" : "500",
+                }}>
                 Media
               </Link>
             </div>
@@ -105,10 +101,10 @@ const Navbar = () => {
                   color:
                     location.pathname === "/Contact"
                       ? "var(--color-blue)"
-                      : "var(--color-gray)",
-                  fontWeight: "600",
-                }}
-              >
+                      : "black",
+                  fontWeight: location.pathname === "/Contact" ? "600" : "500",
+                  // fontWeight: "600",
+                }}>
                 Contact
               </Link>
             </div>
@@ -134,8 +130,7 @@ const Navbar = () => {
                 <Link
                   to={"/"}
                   onClick={() => setToggleMenu(false)}
-                  className="mobile-nav-link"
-                >
+                  className="mobile-nav-link">
                   Home
                 </Link>
               </li>
@@ -176,8 +171,7 @@ const Navbar = () => {
                 <Link
                   to={"/Contact"}
                   // onClick={() => setToggleMenu(false)}
-                  className="mobile-nav-link"
-                >
+                  className="mobile-nav-link">
                   Contact
                 </Link>
               </li>
