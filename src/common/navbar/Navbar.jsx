@@ -46,10 +46,24 @@ const Navbar = () => {
                 About
               </Link>
             </div>
-            <div className="dropdown" style={{ display: "flex" }}>
+            <div className="link_decor_nav">
               <Link
                 to="/ProductPage"
-                // className="link_decor_nav"
+                className="nav_link_h3"
+                style={{
+                  color:
+                    location.pathname === "/ProductPage"
+                      ? "var(--color-blue)"
+                      : "black",
+                  fontWeight:
+                    location.pathname === "/ProductPage" ? "600" : "500",
+                }}>
+                Products
+              </Link>
+            </div>
+            {/* <div className="dropdown" style={{ display: "flex" }}>
+              <Link
+                to="/ProductPage"
                 style={{
                   color:
                     location.pathname === "/ProductPage"
@@ -61,15 +75,6 @@ const Navbar = () => {
                   alignItems: "center",
                 }}>
                 Products
-                {/* <button className="dropbtn">
-                  Products
-                  <h3
-                    style={{ fontSize: "18px" }}
-                    className="link_decor_nav nav_link_h3"
-                  >
-                    Products
-                  </h3>
-                </button> */}
               </Link>
               <div className="dropdown-content">
                 <Link to="/RollerChains">Roller Chains</Link>
@@ -79,7 +84,7 @@ const Navbar = () => {
                 <Link to="/AttachmentChains">Attachment Chains</Link>
                 <Link to="/AgricultureChains">Agriculture Chains</Link>
               </div>
-            </div>
+            </div> */}
             <div className="link_decor_nav">
               <Link
                 to="/"

@@ -185,7 +185,6 @@ const ProductPage = () => {
     {
       id: 1,
       name: "Roller Chains",
-      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -208,7 +207,6 @@ const ProductPage = () => {
     {
       id: 2,
       name: "Leaf Chains",
-      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -223,7 +221,6 @@ const ProductPage = () => {
     {
       id: 3,
       name: "Extended Pitch Chains",
-      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -238,7 +235,6 @@ const ProductPage = () => {
     {
       id: 4,
       name: "Agriculture & Harvester Chains",
-      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -257,7 +253,6 @@ const ProductPage = () => {
     {
       id: 5,
       name: "Other Chains",
-      pdf: require("../../assets/RollerBritish.pdf"),
       list: [
         {
           id: 1,
@@ -284,25 +279,21 @@ const ProductPage = () => {
       id: 1,
       img: require("../../assets/RollerChain1.png"),
       name: "Single Strand - Simplex",
-      pdf: require("../../assets/RollerBritish.pdf"),
     },
     {
       id: 2,
       img: require("../../assets/RollerChain2.png"),
       name: "Single Strand - Simplex",
-      pdf: require("../../assets/RollerBritish.pdf"),
     },
     {
       id: 3,
       img: require("../../assets/RollerChain3.png"),
       name: "Single Strand - Simplex",
-      pdf: require("../../assets/RollerBritish.pdf"),
     },
     {
       id: 4,
       img: require("../../assets/RollerChain4.png"),
       name: "Single Strand - Simplex",
-      pdf: require("../../assets/RollerBritish.pdf"),
     },
   ];
 
@@ -362,7 +353,7 @@ const ProductPage = () => {
             <>
               {getchild.map((item, index) => {
                 return (
-                  <div>
+                  <a href={images.RollerBritish} target="_blank" view>
                     <div className="propage_img_main">
                       <img
                         src={item.img}
@@ -374,11 +365,7 @@ const ProductPage = () => {
                         }}
                       />
                     </div>
-                    <a
-                      href={item.pdf}
-                      target="_blank"
-                      download
-                      className="propage_name_main">
+                    <div className="propage_name_main">
                       <div>Single Strand - Simplex</div>
                       <div
                         style={{
@@ -388,8 +375,8 @@ const ProductPage = () => {
                         }}>
                         more info <FaAnglesRight />
                       </div>
-                    </a>
-                  </div>
+                    </div>
+                  </a>
                 );
               })}
             </>
@@ -398,7 +385,7 @@ const ProductPage = () => {
               {category1.map((item, index) => {
                 return (
                   <>
-                    <a href={item.pdf} target="_blank" download>
+                    <a href={images.RollerBritish} target="_blank" view>
                       <div className="propage_img_main">
                         <img
                           src={item.img}
