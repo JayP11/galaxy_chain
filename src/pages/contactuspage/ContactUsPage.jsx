@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./ContactUsPage.css";
 
 const ContactUsPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="ContactUsPage_main">
       {/* <div className="" style={{ marginBottom: "1rem" }}> */}

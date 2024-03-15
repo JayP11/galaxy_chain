@@ -1,10 +1,10 @@
 import React from "react";
 import "./CategorySliderHome.css";
 import images from "../../constants/images";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { BsArrowRight } from "react-icons/bs";
+import { Link } from "react-router-dom";
 
 const CategorySliderHome = () => {
   return (
@@ -19,49 +19,45 @@ const CategorySliderHome = () => {
         <div className="cat_card_main_flex">
           <div className="cat_card_main">
             <img src={images.cat_roller} alt="" />
-            <div className="cat_arrow_main">
+            <Link to="ProductPage" className="cat_arrow_main">
               <BsArrowRight color="#fff" size={20} />
-            </div>
+            </Link>
 
             <div className="cat_desc_part">
               <p className="cat_desc">Roller</p>
-
               <p className="cat_desc">Chains</p>
             </div>
           </div>
 
           <div className="cat_card_main">
             <img src={images.cat_agriculture} alt="" />
-            <div className="cat_arrow_main">
+            <Link to="ProductPage" className="cat_arrow_main">
               <BsArrowRight color="#fff" size={20} />
-            </div>
+            </Link>
 
             <div className="cat_desc_part">
               <p className="cat_desc">Agriculture</p>
-
               <p className="cat_desc">Chains</p>
             </div>
           </div>
 
           <div className="cat_card_main">
             <img src={images.cat_leaf} alt="" />
-            <div className="cat_arrow_main">
+            <Link to="ProductPage" className="cat_arrow_main">
               <BsArrowRight color="#fff" size={20} />
-            </div>
+            </Link>
 
             <div className="cat_desc_part">
               <p className="cat_desc">Leaf</p>
-
               <p className="cat_desc">Chains</p>
             </div>
           </div>
 
           <div className="cat_card_main">
             <img src={images.cat_bush} alt="" />
-            <div className="cat_arrow_main">
+            <Link to="ProductPage" className="cat_arrow_main">
               <BsArrowRight color="#fff" size={20} />
-            </div>
-
+            </Link>
             <div className="cat_desc_part">
               <p className="cat_desc">Bush</p>
 
@@ -71,10 +67,9 @@ const CategorySliderHome = () => {
 
           <div className="cat_card_main">
             <img src={images.cat_extended} alt="" />
-            <div className="cat_arrow_main">
+            <Link to="ProductPage" className="cat_arrow_main">
               <BsArrowRight color="#fff" size={20} />
-            </div>
-
+            </Link>
             <div className="cat_desc_part">
               <p className="cat_desc">Extended</p>
 

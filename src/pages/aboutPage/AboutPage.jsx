@@ -1,7 +1,10 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./AboutPage.css";
 import images from "../../constants/images";
 const AboutPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       style={{
@@ -156,7 +159,7 @@ const AboutPage = () => {
               </p>
             </div>
           </div>
-          <div className="about_galaxy_conveyor_main">
+          {/* <div className="about_galaxy_conveyor_main">
             <div className="heading">
               <h1>About Galaxy Conveyors</h1>
             </div>
@@ -180,7 +183,7 @@ const AboutPage = () => {
                 partner in the journey to optimized conveyor performance.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

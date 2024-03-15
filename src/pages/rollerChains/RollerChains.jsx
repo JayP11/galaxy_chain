@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./RollerChains.css";
 import images from "../../constants/images";
 
 const RollerChains = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="RollerChains_main">
       <div className="heading">

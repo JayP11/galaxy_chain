@@ -1,14 +1,11 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./ProductPage.css";
 import images from "../../constants/images";
 import { Link } from "react-router-dom";
-import { FaAnglesRight } from "react-icons/fa6";
 
 const ProductPage = () => {
-  const [getImages, setGetImages] = useState(1);
   const [getchild, setchild] = useState([]);
   const [getColor, setColor] = useState(1);
-  const [getindex, setindex] = useState();
 
   // const data = [
   //   {
@@ -188,19 +185,39 @@ const ProductPage = () => {
       list: [
         {
           id: 1,
+          name: "Single Strand - Simplex",
           img: require("../../assets/RollerChain1.png"),
+          category: "British Standard",
         },
         {
           id: 2,
+          name: "Double Strand-Duplex",
           img: require("../../assets/RollerChain2.png"),
+          category: "British Standard",
         },
         {
           id: 3,
+          name: "Triple Strand-Triplex",
           img: require("../../assets/RollerChain3.png"),
+          category: "British Standard",
         },
         {
           id: 4,
+          name: "Single Strand - Simplex",
           img: require("../../assets/RollerChain4.png"),
+          category: "American Standard",
+        },
+        {
+          id: 5,
+          name: "Double Strand-Duplex",
+          img: require("../../assets/RollerChain4.png"),
+          category: "American Standard",
+        },
+        {
+          id: 6,
+          name: "Triple Strand-Triplex",
+          img: require("../../assets/RollerChain4.png"),
+          category: "American Standard",
         },
       ],
     },
@@ -210,16 +227,34 @@ const ProductPage = () => {
       list: [
         {
           id: 1,
+          name: "LL Series",
           img: require("../../assets/Factory_img.png"),
         },
         {
           id: 2,
+          name: "BL Series",
           img: require("../../assets/Factory_img.png"),
         },
       ],
     },
     {
       id: 3,
+      name: "Bush Chains",
+      list: [
+        {
+          id: 1,
+          // name: "LL Series",
+          img: require("../../assets/Factory_img.png"),
+        },
+        {
+          id: 2,
+          // name: "BL Series",
+          img: require("../../assets/Factory_img.png"),
+        },
+      ],
+    },
+    {
+      id: 4,
       name: "Extended Pitch Chains",
       list: [
         {
@@ -233,25 +268,23 @@ const ProductPage = () => {
       ],
     },
     {
-      id: 4,
-      name: "Agriculture & Harvester Chains",
+      id: 5,
+      name: "Agriculture",
       list: [
         {
           id: 1,
           img: require("../../assets/Factory_img.png"),
+          category: "Harvester Chains",
         },
         {
           id: 2,
           img: require("../../assets/Factory_img.png"),
-        },
-        {
-          id: 3,
-          img: require("../../assets/Factory_img.png"),
+          category: "Repair Standard",
         },
       ],
     },
     {
-      id: 5,
+      id: 6,
       name: "Other Chains",
       list: [
         {
@@ -277,27 +310,47 @@ const ProductPage = () => {
   const category1 = [
     {
       id: 1,
-      img: require("../../assets/RollerChain1.png"),
       name: "Single Strand - Simplex",
+      img: require("../../assets/RollerChain1.png"),
+      category: "British Standard",
     },
     {
       id: 2,
+      name: "Double Strand-Duplex",
       img: require("../../assets/RollerChain2.png"),
-      name: "Single Strand - Simplex",
+      category: "British Standard",
     },
     {
       id: 3,
+      name: "Triple Strand-Triplex",
       img: require("../../assets/RollerChain3.png"),
-      name: "Single Strand - Simplex",
+      category: "British Standard",
     },
     {
       id: 4,
-      img: require("../../assets/RollerChain4.png"),
       name: "Single Strand - Simplex",
+      img: require("../../assets/RollerChain4.png"),
+      category: "American Standard",
+    },
+    {
+      id: 5,
+      name: "Double Strand-Duplex",
+      img: require("../../assets/RollerChain4.png"),
+      category: "American Standard",
+    },
+    {
+      id: 6,
+      name: "Triple Strand-Triplex",
+      img: require("../../assets/RollerChain4.png"),
+      category: "American Standard",
     },
   ];
 
   const [getcondition, SetCondition] = useState(false);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   return (
     <>
@@ -314,13 +367,13 @@ const ProductPage = () => {
             return (
               <div
                 style={{
-                  textDecoration: item.id == getColor ? "underline" : "",
-                  textDecorationThickness: item.id == getColor ? "5px" : "",
-                  fontWeight: item.id == getColor ? "800" : "600",
+                  textDecoration: item.id === getColor ? "underline" : "",
+                  textDecorationThickness: item.id === getColor ? "5px" : "",
+                  fontWeight: item.id === getColor ? "800" : "600",
                   textDecorationColor:
-                    item.id == getColor ? "var(--color-red)" : "",
+                    item.id === getColor ? "var(--color-red)" : "",
                   color:
-                    item.id == getColor
+                    item.id === getColor
                       ? "var(--color-blue)"
                       : "var(--color-gray)",
                   textUnderlineOffset: "10px",
@@ -343,17 +396,20 @@ const ProductPage = () => {
             style={{ height: "100%", width: "100%" }}
           />
         </div>
-        <div>
+        {/* <div>
           <Link to="/" className="viewChart_btn_main">
             VIEW CHART
           </Link>
-        </div>
+        </div> */}
         <div className="propage_img_block">
           {getcondition === true ? (
             <>
               {getchild.map((item, index) => {
                 return (
-                  <a href={images.RollerBritish} target="_blank" view>
+                  <Link to="/chartDemo">
+                    <div className="propage_name_main">
+                      <div>{item.name}</div>
+                    </div>
                     <div className="propage_img_main">
                       <img
                         src={item.img}
@@ -366,17 +422,17 @@ const ProductPage = () => {
                       />
                     </div>
                     <div className="propage_name_main">
-                      <div>Single Strand - Simplex</div>
-                      <div
+                      <div>{item.category}</div>
+                      {/* <div
                         style={{
                           display: "flex",
                           alignItems: "center",
                           gap: " 0.2rem",
                         }}>
                         more info <FaAnglesRight />
-                      </div>
+                      </div> */}
                     </div>
-                  </a>
+                  </Link>
                 );
               })}
             </>
@@ -384,7 +440,34 @@ const ProductPage = () => {
             <>
               {category1.map((item, index) => {
                 return (
-                  <>
+                  <Link to="/chartDemo">
+                    <div className="propage_name_main">
+                      <div>{item.name}</div>
+                    </div>
+                    <div className="propage_img_main">
+                      <img
+                        src={item.img}
+                        alt=""
+                        style={{
+                          height: "100%",
+                          width: "100%",
+                          objectFit: "cover",
+                        }}
+                      />
+                    </div>
+                    <div className="propage_name_main">
+                      <div>{item.category}</div>
+                      {/* <div
+                        style={{
+                          display: "flex",
+                          alignItems: "center",
+                          gap: " 0.2rem",
+                        }}>
+                        more info <FaAnglesRight />
+                      </div> */}
+                    </div>
+                  </Link>
+                  /* <>
                     <a href={images.RollerBritish} target="_blank" view>
                       <div className="propage_img_main">
                         <img
@@ -411,7 +494,7 @@ const ProductPage = () => {
                         </div>
                       </div>
                     </a>
-                  </>
+                  </> */
                 );
               })}
             </>

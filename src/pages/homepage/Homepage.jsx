@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HomePgHero from "../../components/homePgHero/HomePgHero";
 import Core_Values_Purpose from "../../components/core_values_purpose/Core_Values_Purpose";
 import Industries_We_Empower from "../../components/industries_we_empower/Industries_We_Empower";
@@ -7,6 +7,9 @@ import CategorySliderHome from "../../components/categorySliderHome/CategorySlid
 import GetQuoteHome from "../../components/getQuoteHome/GetQuoteHome";
 
 const Homepage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <HomePgHero />

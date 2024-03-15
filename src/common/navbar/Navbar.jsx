@@ -150,7 +150,7 @@ const Navbar = () => {
                   Products
                   <i className="fa fa-caret-down"></i>
                 </Link>
-                <div className="dropdown-content">
+                {/* <div className="dropdown-content">
                   <Link to="/RollerChains" style={{ color: "red" }}>
                     Roller Chains
                   </Link>
@@ -169,7 +169,7 @@ const Navbar = () => {
                   <Link to="/AgricultureChains" style={{ color: "red" }}>
                     Agriculture Chains
                   </Link>
-                </div>
+                </div> */}
               </div>
 
               <li>

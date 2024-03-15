@@ -1,0 +1,35 @@
+.ChartDemo_main {
+  margin: 0 auto;
+  max-width: 1140px;
+  padding: 4rem 0;
+}
+.divTable {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+}
+
+.thead {
+  border: 2px solid var(--color-black)  !important;
+  font-weight: 600;
+  border-bottom: 0px !important;
+  background-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+.row {
+  padding: 0px !important;
+  text-align: center;
+}
+.cell {
+  justify-content: center;
+}
+
+.row,
+.cell {
+  display: flex;
+  border: 2px solid black;
+  border-bottom: 0px;
+  width: 100%;
+  padding: 10px 0;
+}
