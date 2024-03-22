@@ -54,8 +54,10 @@ import home_slider_img1 from "../assets/home_slider_img1.jpg";
 import home_slider_img2 from "../assets/home_slider_img2.webp";
 import home_slider_img3 from "../assets/home_slider_img3.jpg";
 import RollerBritish from "../assets/RollerBritish.pdf";
+import pdf from "../assets/pdf.pdf";
 
 export default {
+  pdf,
   bg_img,
   Factory_img,
   gc_logo,

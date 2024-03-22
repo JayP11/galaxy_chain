@@ -5,20 +5,28 @@ import Industries_We_Empower from "../../components/industries_we_empower/Indust
 import NumCountHome from "../../components/numCountHome/NumCountHome";
 import CategorySliderHome from "../../components/categorySliderHome/CategorySliderHome";
 import GetQuoteHome from "../../components/getQuoteHome/GetQuoteHome";
+import { Helmet } from "react-helmet";
 
 const Homepage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
   return (
-    <div>
-      <HomePgHero />
-      <Core_Values_Purpose />
-      <NumCountHome />
-      <Industries_We_Empower />
-      <CategorySliderHome />
-      <GetQuoteHome />
-    </div>
+    <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Galaxy Chain | Home</title>
+      </Helmet>
+      <div>
+        <HomePgHero />
+        <Core_Values_Purpose />
+        <NumCountHome />
+        <Industries_We_Empower />
+        <CategorySliderHome />
+        <GetQuoteHome />
+      </div>
+    </>
   );
 };
 

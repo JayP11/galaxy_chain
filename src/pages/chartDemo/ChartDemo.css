@@ -1,7 +1,11 @@
 .ChartDemo_main {
-  margin: 0 auto;
-  max-width: 1140px;
+  /* margin: 0 auto;
+  max-width: 1140px; */
   padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
 }
 .divTable {
   display: flex;
@@ -10,7 +14,7 @@
 }
 
 .thead {
-  border: 2px solid var(--color-black)  !important;
+  border: 2px solid var(--color-black) !important;
   font-weight: 600;
   border-bottom: 0px !important;
   background-color: var(--color-blue);
@@ -32,4 +36,70 @@
   border-bottom: 0px;
   width: 100%;
   padding: 10px 0;
+}
+
+.chart_head_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  background: indianred;
+}
+
+.chart_name_head_main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 0;
+  gap: 0.5rem;
+}
+
+.table_main {
+  display: flex;
+  align-items: center;
+  max-width: 1235px;
+  overflow: scroll;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: center;
+}
+td {
+  border: 3px solid;
+  padding: 5px;
+}
+th {
+  border: 3px solid var(--color-black);
+  padding: 10px 15px;
+  width: 100px !important;
+  font-size: 18px;
+  background-color: var(--color-blue);
+  color: #fff;
+}
+
+@media screen and (max-width: 1140px) {
+  .table_main {
+    justify-content: flex-start;
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .table_main {
+    max-width: 1000px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .table_main {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 520px) {
+    .table_main {
+    max-width: 375px;
+  }
 }

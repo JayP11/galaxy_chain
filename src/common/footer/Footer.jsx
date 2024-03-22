@@ -7,7 +7,7 @@ import { MdEmail } from "react-icons/md";
 
 const Footer = () => {
   return (
-    <div style={{ boxShadow: "rgba(0, 0, 0, 0.2) 0px 18px 50px -10px" }}>
+    <div style={{ boxShadow: "rgba(0, 0, 0, 0.4) 0px 18px 50px -10px" }}>
       <div className="Footer_main">
         {/* <div className="heading">
         <h1>Galaxy Chains pvt. ltd.</h1><br/>
