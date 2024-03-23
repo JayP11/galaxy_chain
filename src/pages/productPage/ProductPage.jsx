@@ -34,177 +34,6 @@ const ProductPage = () => {
     },
   };
 
-  // const data = [
-  //   {
-  //     id: 1,
-  //     industry: "LPG Bottling Plants",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     industry: "Power Plants",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 3,
-  //     industry: "Cement Industries",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     industry: "Road Construction Machinery & Equipment Industries",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 3,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 4,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 5,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 3,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 4,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 5,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 3,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 4,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 5,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 5,
-  //     industry: "Palm oil Industries",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 3,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 4,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 6,
-  //     industry: "Steel Industries",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 3,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 4,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  //   {
-  //     id: 7,
-  //     industry: "Fertilizer Industries",
-  //     list: [
-  //       {
-  //         id: 1,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 2,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 3,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //       {
-  //         id: 4,
-  //         img: require("../../assets/Factory_img.png"),
-  //       },
-  //     ],
-  //   },
-  // ];
   const category = [
     {
       id: 1,
@@ -261,12 +90,20 @@ const ProductPage = () => {
         {
           id: 1,
           name: "LL Series",
-          img: require("../../assets/Factory_img.png"),
+          img: require("../../assets/RollerChain1.png"),
+          link: "/LLSeriesLeaf",
         },
         {
           id: 2,
           name: "BL Series",
-          img: require("../../assets/Factory_img.png"),
+          img: require("../../assets/RollerChain1.png"),
+          link: "/BLSeriesLeaf",
+        },
+        {
+          id: 3,
+          name: "AL Series",
+          img: require("../../assets/RollerChain1.png"),
+          link: "/ALSeriesLeaf",
         },
       ],
     },

@@ -69,7 +69,6 @@ export default {
   respect_all,
   agriculture,
   sugarcane,
-  sugarcane,
   escalator,
   otherindustry,
   power_plant,

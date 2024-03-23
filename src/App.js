@@ -24,6 +24,9 @@ import Single_bush_british from "./pages/charts/single_bush_british/Single_bush_
 import Extended_pitch_chains from "./pages/charts/extended_pitch_chains/Extended_pitch_chains";
 import Agriculture_feeder_chain from "./pages/charts/agriculture_feeder_chain/Agriculture_feeder_chain";
 import Agriculture_elevator_chain from "./pages/charts/agriculture_elevator_chain/Agriculture_elevator_chain";
+import LLSeriesLeaf from "./pages/charts/lLSeriesLeaf/LLSeriesLeaf";
+import BLSeriesLeaf from "./pages/charts/bLSeriesLeaf/BLSeriesLeaf";
+import ALSeriesLeaf from "./pages/charts/aLSeriesLeaf/ALSeriesLeaf";
 
 function App() {
   return (
@@ -65,6 +68,9 @@ function App() {
         <Route
           path="/Triple_triplex_roller_american"
           element={<Triple_triplex_roller_american />}></Route>
+        <Route path="/LLSeriesLeaf" element={<LLSeriesLeaf />}></Route>
+        <Route path="/BLSeriesLeaf" element={<BLSeriesLeaf />}></Route>
+        <Route path="/ALSeriesLeaf" element={<ALSeriesLeaf />}></Route>
         <Route
           path="/Single_bush_british"
           element={<Single_bush_british />}></Route>

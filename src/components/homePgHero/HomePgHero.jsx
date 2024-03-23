@@ -7,13 +7,12 @@ const HomePgHero = () => {
     <div className="HomePgHero_main">
       <div className="HomePgHero_one">
         <div>
-          <span style={{ fontSize: "18px" }}>MANUFACTURER OF </span>
+          <span className="HomePgHero_name_MANUFACTURER">MANUFACTURER OF </span>
           <br />
-          <span style={{ fontSize: "30px", letterSpacing: "3px" }}>
-            INDUSTRIAL{" "}
-          </span>
+          <span className="HomePgHero_name_cat">INDUSTRIAL </span>
           <br />
-          <span style={{ fontSize: "50px", fontWeight: "900" }}>
+          <span className="HomePgHero_name_head">
+            {" "}
             ROLLER
             <br /> CHAINS
           </span>
@@ -24,9 +23,8 @@ const HomePgHero = () => {
           <div style={{ marginTop: "2rem" }}>
             <Link
               to="/ProductPage"
-              className="btn"
-              style={{ marginTop: "2rem" }}
-            >
+              className="btn btn_home_hero"
+              style={{ marginTop: "2rem" }}>
               View Products
             </Link>
           </div>
@@ -34,13 +32,11 @@ const HomePgHero = () => {
       </div>
       <div className="HomePgHero_two">
         <div>
-          <span style={{ fontSize: "18px" }}>MANUFACTURER OF </span>
+          <span className="HomePgHero_name_MANUFACTURER">MANUFACTURER OF </span>
           <br />
-          <span style={{ fontSize: "30px", letterSpacing: "3px" }}>
-            CUSTOMIZED{" "}
-          </span>
+          <span className="HomePgHero_name_cat">CUSTOMIZED </span>
           <br />
-          <span style={{ fontSize: "50px", fontWeight: "900" }}>
+          <span className="HomePgHero_name_head">
             CONVEYOR <br />
             CHAINS{" "}
           </span>{" "}
@@ -54,9 +50,8 @@ const HomePgHero = () => {
           <div style={{ marginTop: "2rem" }}>
             <Link
               to="https://www.galaxyconveyors.com/"
-              className="btn"
-              style={{ marginTop: "2rem", background: "#19171A" }}
-            >
+              className="btn btn_home_hero"
+              style={{ marginTop: "2rem", background: "#19171A" }}>
               Visit Now
             </Link>
           </div>

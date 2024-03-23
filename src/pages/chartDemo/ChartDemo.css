@@ -92,6 +92,11 @@ th {
     max-width: 1000px;
   }
 }
+@media screen and (max-width: 900px) {
+  .table_main {
+    max-width: 700px;
+  }
+}
 
 @media screen and (max-width: 700px) {
   .table_main {
