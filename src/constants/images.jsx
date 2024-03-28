@@ -56,6 +56,35 @@ import home_slider_img3 from "../assets/home_slider_img3.jpg";
 import RollerBritish from "../assets/RollerBritish.pdf";
 import pdf from "../assets/pdf.pdf";
 
+import simplexRollerChain from "../assets/simplexRollerChain.png";
+import duplexRollerChain from "../assets/duplexRollerChain.png";
+import triplexRollerChain from "../assets/triplexRollerChain.png";
+import LLLeafChain from "../assets/LLLeafChain.png";
+import BLLeafChain from "../assets/BLLeafChain.png";
+import ALLeafChain from "../assets/ALLeafChain.png";
+import BushChain from "../assets/BushChain.png";
+import ExtendedPitchChain from "../assets/ExtendedPitchChain.png";
+import FeederChain from "../assets/FeederChain.png";
+import ElevatorChain from "../assets/ElevatorChain.png";
+
+import Other1 from "../assets/Other1.png";
+import Other2 from "../assets/Other2.png";
+import Other3 from "../assets/Other3.png";
+import Other4 from "../assets/Other4.png";
+import Other5 from "../assets/Other5.png";
+import Other6 from "../assets/Other6.png";
+import Other7 from "../assets/Other7.png";
+import Other8 from "../assets/Other8.png";
+import Other9 from "../assets/Other9.png";
+import Other10 from "../assets/Other10.png";
+import Other11 from "../assets/Other11.png";
+import Other12 from "../assets/Other12.png";
+import Other13 from "../assets/Other13.png";
+import Other14 from "../assets/Other14.png";
+import Other15 from "../assets/Other15.png";
+import Other16 from "../assets/Other16.png";
+import Other17 from "../assets/Other17.png";
+
 export default {
   pdf,
   bg_img,
@@ -109,4 +138,31 @@ export default {
   home_slider_img2,
   home_slider_img3,
   RollerBritish,
+  simplexRollerChain,
+  duplexRollerChain,
+  triplexRollerChain,
+  LLLeafChain,
+  BLLeafChain,
+  ALLeafChain,
+  BushChain,
+  ExtendedPitchChain,
+  FeederChain,
+  ElevatorChain,
+  Other1,
+  Other2,
+  Other3,
+  Other4,
+  Other5,
+  Other6,
+  Other7,
+  Other8,
+  Other9,
+  Other10,
+  Other11,
+  Other12,
+  Other13,
+  Other14,
+  Other15,
+  Other16,
+  Other17,
 };

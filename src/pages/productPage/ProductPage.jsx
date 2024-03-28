@@ -42,42 +42,42 @@ const ProductPage = () => {
         {
           id: 1,
           name: "Single Strand - Simplex",
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/simplexRollerChain.png"),
           category: "British Standard",
           link: "/Single_simplex_roller_british",
         },
         {
           id: 2,
           name: "Double Strand-Duplex",
-          img: require("../../assets/RollerChain2.png"),
+          img: require("../../assets/duplexRollerChain.png"),
           category: "British Standard",
           link: "/Double_duplex_roller_british",
         },
         {
           id: 3,
           name: "Triple Strand-Triplex",
-          img: require("../../assets/RollerChain3.png"),
+          img: require("../../assets/triplexRollerChain.png"),
           category: "British Standard",
           link: "/Triple_triplex_roller_british",
         },
         {
           id: 4,
           name: "Single Strand - Simplex",
-          img: require("../../assets/RollerChain4.png"),
+          img: require("../../assets/simplexRollerChain.png"),
           category: "American Standard",
           link: "/Single_simplex_roller_american",
         },
         {
           id: 5,
           name: "Double Strand-Duplex",
-          img: require("../../assets/RollerChain4.png"),
+          img: require("../../assets/duplexRollerChain.png"),
           category: "American Standard",
           link: "/Double_duplex_roller_american",
         },
         {
           id: 6,
           name: "Triple Strand-Triplex",
-          img: require("../../assets/RollerChain4.png"),
+          img: require("../../assets/triplexRollerChain.png"),
           category: "American Standard",
           link: "/Triple_triplex_roller_american",
         },
@@ -90,19 +90,19 @@ const ProductPage = () => {
         {
           id: 1,
           name: "LL Series",
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/LLLeafChain.png"),
           link: "/LLSeriesLeaf",
         },
         {
           id: 2,
           name: "BL Series",
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/BLLeafChain.png"),
           link: "/BLSeriesLeaf",
         },
         {
           id: 3,
           name: "AL Series",
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/ALLeafChain.png"),
           link: "/ALSeriesLeaf",
         },
       ],
@@ -115,7 +115,7 @@ const ProductPage = () => {
           id: 1,
           name: "Single Strand",
           category: "British Standard",
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/BushChain.png"),
           link: "/Single_bush_british",
         },
       ],
@@ -127,7 +127,7 @@ const ProductPage = () => {
         {
           id: 1,
           name: "Extended Pitch Chains",
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/ExtendedPitchChain.png"),
           link: "/Extended_pitch_chains",
         },
       ],
@@ -138,14 +138,14 @@ const ProductPage = () => {
       list: [
         {
           id: 1,
-          img: require("../../assets/RollerChain1.png"),
           name: "Feeder Chains",
+          img: require("../../assets/FeederChain.png"),
           category: "Agriculture",
           link: "/Agriculture_feeder_chain",
         },
         {
           id: 2,
-          img: require("../../assets/RollerChain1.png"),
+          img: require("../../assets/ElevatorChain.png"),
           name: "Elevator Chains",
           category: "Agriculture",
           link: "/Agriculture_elevator_chain",
@@ -158,19 +158,71 @@ const ProductPage = () => {
       list: [
         {
           id: 1,
-          img: require("../../assets/Factory_img.png"),
+          img: require("../../assets/Other1.png"),
         },
         {
           id: 2,
-          img: require("../../assets/Factory_img.png"),
+          img: require("../../assets/Other2.png"),
         },
         {
           id: 3,
-          img: require("../../assets/Factory_img.png"),
+          img: require("../../assets/Other3.png"),
         },
         {
           id: 4,
-          img: require("../../assets/Factory_img.png"),
+          img: require("../../assets/Other4.png"),
+        },
+        {
+          id: 5,
+          img: require("../../assets/Other5.png"),
+        },
+        {
+          id: 6,
+          img: require("../../assets/Other6.png"),
+        },
+        {
+          id: 7,
+          img: require("../../assets/Other7.png"),
+        },
+        {
+          id: 8,
+          img: require("../../assets/Other8.png"),
+        },
+        {
+          id: 9,
+          img: require("../../assets/Other9.png"),
+        },
+        {
+          id: 10,
+          img: require("../../assets/Other10.png"),
+        },
+        {
+          id: 11,
+          img: require("../../assets/Other11.png"),
+        },
+        {
+          id: 12,
+          img: require("../../assets/Other12.png"),
+        },
+        {
+          id: 13,
+          img: require("../../assets/Other13.png"),
+        },
+        {
+          id: 14,
+          img: require("../../assets/Other14.png"),
+        },
+        {
+          id: 15,
+          img: require("../../assets/Other15.png"),
+        },
+        {
+          id: 16,
+          img: require("../../assets/Other16.png"),
+        },
+        {
+          id: 17,
+          img: require("../../assets/Other17.png"),
         },
       ],
     },
@@ -180,42 +232,43 @@ const ProductPage = () => {
     {
       id: 1,
       name: "Single Strand - Simplex",
-      img: require("../../assets/RollerChain1.png"),
+      // img: require("../../assets/RollerChain1.png"),
+      img: require("../../assets/simplexRollerChain.png"),
       category: "British Standard",
       link: "/Single_simplex_roller_british",
     },
     {
       id: 2,
       name: "Double Strand-Duplex",
-      img: require("../../assets/RollerChain2.png"),
+      img: require("../../assets/duplexRollerChain.png"),
       category: "British Standard",
       link: "/Double_duplex_roller_british",
     },
     {
       id: 3,
       name: "Triple Strand-Triplex",
-      img: require("../../assets/RollerChain3.png"),
+      img: require("../../assets/triplexRollerChain.png"),
       category: "British Standard",
       link: "/Triple_triplex_roller_british",
     },
     {
       id: 4,
       name: "Single Strand - Simplex",
-      img: require("../../assets/RollerChain4.png"),
+      img: require("../../assets/simplexRollerChain.png"),
       category: "American Standard",
       link: "/Single_simplex_roller_american",
     },
     {
       id: 5,
       name: "Double Strand-Duplex",
-      img: require("../../assets/RollerChain4.png"),
+      img: require("../../assets/duplexRollerChain.png"),
       category: "American Standard",
       link: "/Double_duplex_roller_american",
     },
     {
       id: 6,
       name: "Triple Strand-Triplex",
-      img: require("../../assets/RollerChain4.png"),
+      img: require("../../assets/triplexRollerChain.png"),
       category: "American Standard",
       link: "/Triple_triplex_roller_american",
     },
@@ -224,17 +277,6 @@ const ProductPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
-
-  // useEffect(() => {
-  //   const getIndex = localStorage.getItem("index");
-  //   if (getIndex) {
-  //     setColor(getIndex);
-  //     SetCondition(true);
-  //   } else {
-  //     setColor(1);
-  //   }
-  //   console.log("getIndex", getIndex);
-  // }, [getColor]);
 
   return (
     <>
@@ -300,7 +342,8 @@ const ProductPage = () => {
                         style={{
                           height: "100%",
                           width: "100%",
-                          objectFit: "cover",
+                          objectFit: "contain",
+                          background: "white",
                         }}
                       />
                     </div>
@@ -326,7 +369,8 @@ const ProductPage = () => {
                         style={{
                           height: "100%",
                           width: "100%",
-                          objectFit: "cover",
+                          objectFit: "contain",
+                          background: "white",
                         }}
                       />
                     </div>
