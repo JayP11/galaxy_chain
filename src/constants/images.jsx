@@ -1,4 +1,3 @@
-import Factory_img from "../assets/Factory_img.png";
 import gc_logo from "../assets/gc_logo.png";
 import gconveyors from "../assets/gconveyors.png";
 import bg_img from "../assets/bg_img.jpeg";
@@ -30,14 +29,15 @@ import Happy_Customers from "../assets/Happy_Customers.png";
 import Manufacturing_Capacity from "../assets/Manufacturing_Capacity.png";
 import Manufacturing_Unitof from "../assets/Manufacturing_Unitof.png";
 import experience from "../assets/experience.png";
-
-import RollerChains from "../assets/RollerChains.png";
 import RollerChains_img from "../assets/RollerChains_img.png";
 import Chainimg from "../assets/Chainimg.jpeg";
 import RollerChain1 from "../assets/RollerChain1.png";
 import RollerChain2 from "../assets/RollerChain2.png";
 import RollerChain3 from "../assets/RollerChain3.png";
 import RollerChain4 from "../assets/RollerChain4.png";
+import home_slider_img1 from "../assets/home_slider_img1.jpg";
+import home_slider_img2 from "../assets/home_slider_img2.webp";
+import home_slider_img3 from "../assets/home_slider_img3.jpg";
 
 import cat_roller from "../assets/cat_roller.png";
 import cat_agriculture from "../assets/cat_agriculture.png";
@@ -50,12 +50,6 @@ import core_img2 from "../assets/core_img2.png";
 import core_img3 from "../assets/core_img3.png";
 import core_img4 from "../assets/core_img4.png";
 import core_img5 from "../assets/core_img5.png";
-import home_slider_img1 from "../assets/home_slider_img1.jpg";
-import home_slider_img2 from "../assets/home_slider_img2.webp";
-import home_slider_img3 from "../assets/home_slider_img3.jpg";
-import RollerBritish from "../assets/RollerBritish.pdf";
-import pdf from "../assets/pdf.pdf";
-
 import simplexRollerChain from "../assets/simplexRollerChain.png";
 import duplexRollerChain from "../assets/duplexRollerChain.png";
 import triplexRollerChain from "../assets/triplexRollerChain.png";
@@ -86,9 +80,7 @@ import Other16 from "../assets/Other16.png";
 import Other17 from "../assets/Other17.png";
 
 export default {
-  pdf,
   bg_img,
-  Factory_img,
   gc_logo,
   gconveyors,
   quality_assurance,
@@ -116,7 +108,6 @@ export default {
   Manufacturing_Capacity,
   Manufacturing_Unitof,
   experience,
-  RollerChains,
   RollerChains_img,
   Chainimg,
   RollerChain1,
@@ -137,7 +128,6 @@ export default {
   home_slider_img1,
   home_slider_img2,
   home_slider_img3,
-  RollerBritish,
   simplexRollerChain,
   duplexRollerChain,
   triplexRollerChain,

@@ -14,11 +14,12 @@
   min-height: 100px;
   align-items: center;
   gap: 1rem;
+  text-align: center;
   flex-direction: column;
 }
 
 .prodpage_thought_inner {
-  font-size: 30px;
+  font-size: 36px;
   font-style: italic;
   text-align: center;
 }
@@ -147,5 +148,9 @@
 
   .propage_img_main {
     min-width: 250px;
+  }
+
+  .prodpage_thought_inner {
+    font-size: 24px;
   }
 }

@@ -3,6 +3,8 @@
   max-width: 1140px;
   margin: 0 auto;
   display: flex;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   align-items: center;
   justify-content: space-between;
   height: 90px;
@@ -16,7 +18,7 @@
   text-decoration: none !important;
   transition: all ease-in-out 0.4s;
   cursor: pointer;
-  background: linear-gradient(currentColor 0 0) bottom / var(--d, 0) 3px
+  background: linear-gradient(var(--color-red) 0 0) bottom / var(--d, 0) 3px
     no-repeat;
   transition: 0.5s;
   padding: 5px;

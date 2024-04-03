@@ -92,6 +92,11 @@ th {
     max-width: 1000px;
   }
 }
+@media screen and (max-width: 1000px) {
+  .table_main {
+    max-width: 900px;
+  }
+}
 @media screen and (max-width: 900px) {
   .table_main {
     max-width: 700px;
@@ -104,7 +109,7 @@ th {
   }
 }
 @media screen and (max-width: 520px) {
-    .table_main {
+  .table_main {
     max-width: 375px;
   }
 }

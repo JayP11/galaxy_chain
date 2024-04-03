@@ -333,7 +333,13 @@ const ProductPage = () => {
                 return (
                   <Link to={item.link} style={{ cursor: "pointer" }}>
                     <div className="propage_name_main">
-                      <div>{item.name}</div>
+                      <div
+                        style={{
+                          color: "var(--color-blue)",
+                          fontWeight: "800",
+                        }}>
+                        {item.name}
+                      </div>
                     </div>
                     <div className="propage_img_main">
                       <img
@@ -360,7 +366,13 @@ const ProductPage = () => {
                 return (
                   <Link to={item.link} style={{ cursor: "pointer" }}>
                     <div className="propage_name_main">
-                      <div>{item.name}</div>
+                      <div
+                        style={{
+                          color: "var(--color-blue)",
+                          fontWeight: "800",
+                        }}>
+                        {item.name}
+                      </div>
                     </div>
                     <div className="propage_img_main">
                       <img

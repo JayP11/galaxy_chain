@@ -124,7 +124,11 @@ const CategorySliderHome = () => {
         </div> */}
 
           <div className="cat_card_main">
-            <img src={images.cat_roller} alt="" />
+            <img
+              src={images.cat_roller}
+              alt=""
+              style={{ height: "100%", width: "100%" }}
+            />
             <Link to="ProductPage" className="cat_arrow_main">
               <BsArrowRight color="#fff" size={20} />
             </Link>
