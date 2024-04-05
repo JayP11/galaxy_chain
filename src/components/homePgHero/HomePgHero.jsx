@@ -41,17 +41,11 @@ const HomePgHero = () => {
             CHAINS{" "}
           </span>{" "}
           <br />
-          {/* <button
-            style={{ marginTop: "2rem", background: "#19171A" }}
-            className="btn"
-          >
-            Visit Now
-          </button> */}
           <div style={{ marginTop: "2rem" }}>
             <Link
               to="https://www.galaxyconveyors.com/"
-              className="btn btn_home_hero"
-              style={{ marginTop: "2rem", background: "#19171A" }}>
+              className="btn btn_black"
+              style={{ marginTop: "2rem" }}>
               Visit Now
             </Link>
           </div>

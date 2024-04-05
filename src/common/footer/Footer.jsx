@@ -120,7 +120,7 @@ const Footer = () => {
 
         <div className="Galaxy_Chains_block">
           <div style={{ color: "darkorange" }}>
-            <h3>Galaxy Conveyors pvt. ltd. Extende</h3>
+            <h3>Galaxy Conveyors pvt. ltd.</h3>
           </div>
           <div
             className="underline"

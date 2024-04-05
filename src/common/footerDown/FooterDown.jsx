@@ -1,12 +1,15 @@
 import React from "react";
 import "./FooterDown.css";
+import moment from "moment";
 
 const FooterDown = () => {
+  const currentDate = moment();
+  const formattedDate = currentDate.format("YYYY");
   return (
     <div className="footer_down_main">
       <div className="footer_down_con">
         <p className="footer_down_text">
-          &copy; Copyright 2024 - Galaxy Chains
+          &copy; Copyright {formattedDate} - Galaxy Chains | All Rights Reserved
         </p>
         <ul className="footer_down_list_main">
           <li className="footer_down_list">Privacy Policy</li>
