@@ -85,7 +85,7 @@ const Navbar = () => {
                 <Link to="/AgricultureChains">Agriculture Chains</Link>
               </div>
             </div> */}
-            <div className="link_decor_nav">
+            {/* <div className="link_decor_nav">
               <Link
                 to="/"
                 className="nav_link_h3"
@@ -97,7 +97,7 @@ const Navbar = () => {
                 }}>
                 Media
               </Link>
-            </div>
+          </div> */}
             <div className="link_decor_nav">
               <Link
                 to="/Contact"
@@ -140,13 +140,19 @@ const Navbar = () => {
                 </Link>
               </li>
               <div className="dropdown">
-                <Link to="/About" className="mobile-nav-link">
+                <Link
+                  to="/About"
+                  className="mobile-nav-link"
+                  onClick={() => setToggleMenu(false)}>
                   About
                   <i className="fa fa-caret-down"></i>
                 </Link>
               </div>
               <div className="dropdown">
-                <Link to="/ProductPage" className="mobile-nav-link">
+                <Link
+                  to="/ProductPage"
+                  className="mobile-nav-link"
+                  onClick={() => setToggleMenu(false)}>
                   Products
                   <i className="fa fa-caret-down"></i>
                 </Link>
@@ -175,7 +181,7 @@ const Navbar = () => {
               <li>
                 <Link
                   to={"/Contact"}
-                  // onClick={() => setToggleMenu(false)}
+                  onClick={() => setToggleMenu(false)}
                   className="mobile-nav-link">
                   Contact
                 </Link>

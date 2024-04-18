@@ -68,11 +68,13 @@ table {
   text-align: center;
 }
 td {
-  border: 3px solid;
+  border: 1px solid gray;
   padding: 5px;
+  background-color: lightgray;
 }
 th {
-  border: 3px solid var(--color-black);
+  border: 1px solid gray;
+  /* border: 3px solid var(--color-black); */
   padding: 10px 15px;
   width: 100px !important;
   font-size: 18px;

@@ -1,6 +1,7 @@
 import gc_logo from "../assets/gc_logo.png";
 import gconveyors from "../assets/gconveyors.png";
 import bg_img from "../assets/bg_img.jpeg";
+import Factory_img from "../assets/Factory_img.png";
 
 import quality_assurance from "../assets/quality_assurance.png";
 import customer_satisfaction from "../assets/customer_satisfaction.png";
@@ -78,8 +79,11 @@ import Other14 from "../assets/Other14.png";
 import Other15 from "../assets/Other15.png";
 import Other16 from "../assets/Other16.png";
 import Other17 from "../assets/Other17.png";
+import About_head from "../assets/About_head.png";
 
 export default {
+  Factory_img,
+About_head,
   bg_img,
   gc_logo,
   gconveyors,
