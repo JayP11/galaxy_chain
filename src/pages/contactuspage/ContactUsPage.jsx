@@ -3,9 +3,10 @@ import "./ContactUsPage.css";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import axios from "axios";
-// import { contact_us } from "../../utils/constants";
-// import { mobileValidate } from "../..";
 
+import { contactus_url } from "../../utils/constants";
+import { mobileValidate } from "../../utils/helpers";
+import Notification from "../../utils/Notification";
 
 const ContactUsPage = () => {
   const [name, setname] = useState("");
@@ -15,6 +16,7 @@ const ContactUsPage = () => {
   const [description, setdescription] = useState("");
 
   const contactApi = async () => {
+    console.log("abc");
     const regEx =
       /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const regexpMobile = /^[0-9\b]+$/;
@@ -34,7 +36,6 @@ const ContactUsPage = () => {
     } else if (number.length < 10 || number.length > 10) {
       // alert("Enter valid mobile number...");
       Notification("error", "Error!", "Enter valid mobile number...");
-
       return;
     } else if (subject == "") {
       Notification("error", "Error!", "Please enter your Subject!");
@@ -45,20 +46,18 @@ const ContactUsPage = () => {
     } else {
       const formData = new FormData();
       formData.append("name", name);
-      //  formData.append("lastname", "test");
       formData.append("email", email);
       formData.append("number", number);
       formData.append("subject", subject);
       formData.append("description", description);
-      //  formData.append("state_id", 12);
-      //  formData.append("city_id", "779");
       console.log("formData contact us ", formData);
 
       const response = await axios
-        .post(contact_us, formData, {
+        .post(contactus_url, formData, {
           headers: {
-            Accept: "application/x.kingskraft.v1+json",
+            Accept: "application/x.galaxychain.v1+json",
           },
+          "Access-Control-Allow-Origin": "*",
         })
         .catch((error) => console.error(`Error: ${error}`));
       console.log("response contact us ", response.data);
@@ -115,7 +114,7 @@ const ContactUsPage = () => {
         {/* <div className="underline"></div> */}
         {/* </div> */}
         <div className="ContactUsPage_form">
-          <form className="c_form">
+          <div className="c_form">
             <h4 className="c-lbl">Name</h4>
             {/* <input type="text" placeholder="" className="c-txt" /> */}
             <input
@@ -141,26 +140,31 @@ const ContactUsPage = () => {
             />
 
             <h4 className="c-lbl">Email</h4>
-            <input type="text" placeholder="" className="c-txt" />
+            <input
+              type="text"
+              placeholder=""
+              value={email}
+              onChange={(e) => setemail(e.target.value)}
+              className="c-txt"
+            />
             <h4 className="c-lbl">Subject</h4>
             <input
               type="text"
               placeholder=""
-              //   value={subject}
-              //   onChange={(e) => setsubject(e.target.value)}
+              value={subject}
+              onChange={(e) => setsubject(e.target.value)}
               className="c-txt"
             />
             <h4 className="c-lbl">Description</h4>
             <textarea
               placeholder="Please leave message here..."
-              //   value={description}
+              value={description}
               className="c-msg-txt"
-              //   onChange={(e) => setdescription(e.target.value)}
-            ></textarea>
+              onChange={(e) => setdescription(e.target.value)}></textarea>
             <button className="btn btn_form_red" onClick={() => contactApi()}>
               Submit
             </button>
-          </form>
+          </div>
           <iframe
             className="map_inner"
             style={{ border: "none", borderRadius: "10px" }}
