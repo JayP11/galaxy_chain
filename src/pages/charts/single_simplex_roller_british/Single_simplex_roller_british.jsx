@@ -26,12 +26,20 @@ const Single_simplex_roller_british = () => {
           </span>
         </div>
 
-        <div>
+        <div className="chart_chainGraph_imgs_main">
           <div>
-            <img src={images.RollerChainSimplex} alt="" className="chart_chainGraph_imgs_inner"/>
+            <img
+              src={images.RollerChainSimplex}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
           </div>
           <div>
-            <img src={images.RollerChainSimplexGraph} alt="" className="chart_chainGraph_imgs_inner"/>
+            <img
+              src={images.RollerChainSimplexGraph}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
           </div>
         </div>
 

@@ -38,7 +38,28 @@
   padding: 10px 0;
 }
 
+.chart_chainGraph_imgs_main {
+  display: flex;
+  gap: 2rem;
+}
+
 .chart_chainGraph_imgs_inner {
   height: 400px;
   width: 100%;
+}
+
+@media screen and (max-width: 1020px) {
+  .chart_chainGraph_imgs_inner {
+    height: 270px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .chart_chainGraph_imgs_inner {
+    height: 200px;
+  }
+}
+@media screen and (max-width: 530px) {
+  .chart_chainGraph_imgs_main {
+  flex-direction: column;
+  }
 }
