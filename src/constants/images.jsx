@@ -80,10 +80,31 @@ import Other15 from "../assets/Other15.png";
 import Other16 from "../assets/Other16.png";
 import Other17 from "../assets/Other17.png";
 import About_head from "../assets/About_head.png";
+import Certificate1 from "../assets/Certificate1.png";
+import Certificate2 from "../assets/Certificate2.png";
+
+import RollerChainSimplex from "../assets/RollerChainSimplex.jpg";
+import RollerChainSimplexGraph from "../assets/RollerChainSimplexGraph.jpg";
+import RollerChainDuplexImage from "../assets/RollerChainDuplexImage.jpg";
+import RollerChainDuplexGraph from "../assets/RollerChainDuplexGraph.jpg";
+import RollerChainTriplex from "../assets/RollerChainTriplex.jpg";
+import RollerChainTriplexGraph from "../assets/RollerChainTriplexGraph.jpg";
+import LeafChain from "../assets/LeafChain.jpg";
+import LeafChainGraph from "../assets/LeafChainGraph.jpg";
+import ExtendedPitchChainImage from "../assets/ExtendedPitchChainImage.jpg";
+import ExtendedPitchChainGraph from "../assets/ExtendedPitchChainGraph.jpg";
+import BushChainImage from "../assets/BushChainImage.jpg";
+import BushChainGraph from "../assets/BushChainGraph.jpg";
+import AgricultureFeederChain from "../assets/AgricultureFeederChain.jpg";
+import AgricultureFeederChainGraph from "../assets/AgricultureFeederChainGraph.jpg";
+import AgricultureElevatorChain from "../assets/AgricultureElevatorChain.jpg";
+import AgricultureElevatorChainGraph from "../assets/AgricultureElevatorChainGraph.jpg";
 
 export default {
   Factory_img,
-About_head,
+  About_head,
+  Certificate1,
+  Certificate2,
   bg_img,
   gc_logo,
   gconveyors,
@@ -159,4 +180,20 @@ About_head,
   Other15,
   Other16,
   Other17,
+  RollerChainSimplex,
+  RollerChainSimplexGraph,
+  RollerChainDuplexImage,
+  RollerChainDuplexGraph,
+  RollerChainTriplex,
+  RollerChainTriplexGraph,
+  LeafChain,
+  LeafChainGraph,
+  ExtendedPitchChainImage,
+  ExtendedPitchChainGraph,
+  BushChainImage,
+  BushChainGraph,
+  AgricultureFeederChain,
+  AgricultureFeederChainGraph,
+  AgricultureElevatorChain,
+  AgricultureElevatorChainGraph,
 };

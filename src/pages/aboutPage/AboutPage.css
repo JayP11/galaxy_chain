@@ -121,6 +121,17 @@
   flex-direction: column;
   gap: 1rem;
 }
+
+.Certificate_img_top {
+  /* margin: 2rem; */
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.Certificate_img_main {
+  height: 400px;
+}
 @media screen and (max-width: 1050px) {
   .About_part2_inner_1 {
     height: 300px;

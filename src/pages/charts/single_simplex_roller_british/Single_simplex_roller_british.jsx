@@ -26,6 +26,15 @@ const Single_simplex_roller_british = () => {
           </span>
         </div>
 
+        <div>
+          <div>
+            <img src={images.RollerChainSimplex} alt="" className="chart_chainGraph_imgs_inner"/>
+          </div>
+          <div>
+            <img src={images.RollerChainSimplexGraph} alt="" className="chart_chainGraph_imgs_inner"/>
+          </div>
+        </div>
+
         {/*  */}
         <div className="table_main">
           <table width="864">

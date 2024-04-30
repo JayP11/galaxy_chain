@@ -37,3 +37,8 @@
   width: 100%;
   padding: 10px 0;
 }
+
+.chart_chainGraph_imgs_inner {
+  height: 400px;
+  width: 100%;
+}

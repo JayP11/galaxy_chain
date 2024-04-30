@@ -135,7 +135,8 @@ const AboutPage = () => {
           style={{
             // height: "300px",
             padding: "3rem",
-            background: "lightsteelblue",
+            // background: "lightsteelblue",
+            background: "whitesmoke",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -197,6 +198,41 @@ const AboutPage = () => {
                 className="About_product_range_list_h3">
                 as per customer requirement.
               </h3>
+            </div>
+          </div>
+        </div>
+        <div
+          style={{
+            // height: "300px",
+            padding: "3rem",
+            background: "lightsteelblue",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            color: "white",
+            flexDirection: "column",
+            gap: "1rem",
+          }}>
+          <div>
+            <div className="heading" style={{ color: "#8b0000" }}>
+              <h1>Certificates</h1>
+            </div>
+            <div style={{ background: "white" }} className="underline"></div>
+          </div>
+          <div className="Certificate_img_top">
+            <div className="Certificate_img_main">
+              <img
+                src={images.Certificate1}
+                alt=""
+                style={{ height: "100%", width: "100%" }}
+              />
+            </div>
+            <div className="Certificate_img_main">
+              <img
+                src={images.Certificate2}
+                alt=""
+                style={{ height: "100%", width: "100%" }}
+              />
             </div>
           </div>
         </div>
