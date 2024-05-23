@@ -1,7 +1,12 @@
-import gc_logo from "../assets/gc_logo.png";
+// import gc_logo from "../assets/gc_logo.png";
+import gc_logo from "../assets/logo.png";
 import gconveyors from "../assets/gconveyors.png";
 import bg_img from "../assets/bg_img.jpeg";
 import Factory_img from "../assets/Factory_img.png";
+import factory_gray from "../assets/factory_gray.jpg";
+import chain_mix from "../assets/chain_mix.jpg";
+// import General_Chains from "../assets/General_Chains.jpg";
+import ProductRange from "../assets/ProductRange.jpg";
 
 import quality_assurance from "../assets/quality_assurance.png";
 import customer_satisfaction from "../assets/customer_satisfaction.png";
@@ -21,7 +26,7 @@ import textile from "../assets/textile.png";
 import Steel_Plants from "../assets/Steel_Plants.png";
 import Cement_Plants from "../assets/Cement_Plants.png";
 
-import chain_img from "../assets/chain_img.jpeg";
+import chain_img_bg from "../assets/chain_img_bg.jpeg";
 import global from "../assets/global.png";
 import india_location from "../assets/india_location.png";
 import Industries_Serving from "../assets/Industries_Serving.png";
@@ -31,6 +36,7 @@ import Manufacturing_Capacity from "../assets/Manufacturing_Capacity.png";
 import Manufacturing_Unitof from "../assets/Manufacturing_Unitof.png";
 import experience from "../assets/experience.png";
 import RollerChains_img from "../assets/RollerChains_img.png";
+import chain_img from "../assets/About_Img_2.jpg";
 import Chainimg from "../assets/Chainimg.jpeg";
 import RollerChain1 from "../assets/RollerChain1.png";
 import RollerChain2 from "../assets/RollerChain2.png";
@@ -42,8 +48,8 @@ import home_slider_img3 from "../assets/home_slider_img3.jpg";
 
 import cat_roller from "../assets/cat_roller.png";
 import cat_agriculture from "../assets/cat_agriculture.png";
-import cat_leaf from "../assets/cat_leaf.png";
-import cat_bush from "../assets/cat_bush.png";
+import cat_leaf from "../assets/GC_Catagories/cat_leaf.jpg";
+import cat_bush from "../assets/GC_Catagories/cat_bush.jpg";
 import cat_extended from "../assets/cat_extended.png";
 import core_purpose_head from "../assets/core_purpose_head_img.png";
 import core_img1 from "../assets/core_img1.png";
@@ -100,8 +106,26 @@ import AgricultureFeederChainGraph from "../assets/AgricultureFeederChainGraph.j
 import AgricultureElevatorChain from "../assets/AgricultureElevatorChain.jpg";
 import AgricultureElevatorChainGraph from "../assets/AgricultureElevatorChainGraph.jpg";
 
+import ind1 from "../assets/GC_Industries/ind1.jpg";
+import ind2 from "../assets/GC_Industries/ind2.jpg";
+import ind3 from "../assets/GC_Industries/ind3.jpg";
+import ind4 from "../assets/GC_Industries/ind4.jpg";
+import ind5 from "../assets/GC_Industries/ind5.jpg";
+import ind6 from "../assets/GC_Industries/ind6.jpg";
+import ind7 from "../assets/GC_Industries/ind7.jpg";
+import ind8 from "../assets/GC_Industries/ind8.jpg";
+import ind9 from "../assets/GC_Industries/ind9.jpg";
+import ind10 from "../assets/GC_Industries/ind10.jpg";
+import ind11 from "../assets/GC_Industries/ind11.jpg";
+import ind12 from "../assets/GC_Industries/ind12.jpg";
+import catalogue from "../assets/catalogue.pdf";
+
 export default {
+  catalogue,
+  factory_gray,
   Factory_img,
+  ProductRange,
+  chain_mix,
   About_head,
   Certificate1,
   Certificate2,
@@ -124,7 +148,7 @@ export default {
   textile,
   Steel_Plants,
   Cement_Plants,
-  chain_img,
+  chain_img_bg,
   global,
   india_location,
   Industries_Serving,
@@ -135,6 +159,7 @@ export default {
   experience,
   RollerChains_img,
   Chainimg,
+  chain_img,
   RollerChain1,
   RollerChain2,
   RollerChain3,
@@ -196,4 +221,17 @@ export default {
   AgricultureFeederChainGraph,
   AgricultureElevatorChain,
   AgricultureElevatorChainGraph,
+
+  ind1,
+  ind2,
+  ind3,
+  ind4,
+  ind5,
+  ind6,
+  ind7,
+  ind8,
+  ind9,
+  ind10,
+  ind11,
+  ind12,
 };

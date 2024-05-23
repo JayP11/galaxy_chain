@@ -3,10 +3,10 @@ import "./ContactUsPage.css";
 import { Helmet } from "react-helmet";
 import { Link } from "react-router-dom";
 import axios from "axios";
-
 import { contactus_url } from "../../utils/constants";
 import { mobileValidate } from "../../utils/helpers";
 import Notification from "../../utils/Notification";
+import useAnalyticsEventTracker from "../../common/useAnalyticsEventTracker";
 
 const ContactUsPage = () => {
   const [name, setname] = useState("");
@@ -14,6 +14,8 @@ const ContactUsPage = () => {
   const [number, setnumber] = useState("");
   const [subject, setsubject] = useState("");
   const [description, setdescription] = useState("");
+
+  const gaEventTracker = useAnalyticsEventTracker("Contact us");
 
   const contactApi = async () => {
     console.log("abc");
@@ -85,17 +87,23 @@ const ContactUsPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
   return (
     <>
       <Helmet>
-        <title>Galaxy Chain | Contact</title>
+        <title>Galaxy Chain Pvt. Ltd.| Contact</title>
       </Helmet>
       <div className="hero_path">
         <h1>
           <Link
             className="GetQuoteHome_main"
             to="/"
-            style={{ minHeight: "100%" }}>
+            style={{ minHeight: "100%" }}
+          >
             Home&nbsp;&nbsp;/
           </Link>
           {"  "}
@@ -160,8 +168,15 @@ const ContactUsPage = () => {
               placeholder="Please leave message here..."
               value={description}
               className="c-msg-txt"
-              onChange={(e) => setdescription(e.target.value)}></textarea>
-            <button className="btn btn_form_red" onClick={() => contactApi()}>
+              onChange={(e) => setdescription(e.target.value)}
+            ></textarea>
+            <button
+              className="btn btn_form_red"
+              onClick={() => {
+                contactApi();
+                gaEventTracker("contact form");
+              }}
+            >
               Submit
             </button>
           </div>
@@ -176,7 +191,8 @@ const ContactUsPage = () => {
             // style="border:0;"
             allowFullScreen=""
             loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"></iframe>
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </div>
     </>

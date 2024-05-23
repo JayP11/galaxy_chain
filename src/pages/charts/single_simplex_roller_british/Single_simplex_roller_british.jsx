@@ -17,7 +17,8 @@ const Single_simplex_roller_british = () => {
       <div className="ChartDemo_main">
         <div
           className="prodpage_thought_main"
-          style={{ width: "100%", gap: "10px", padding: "2rem" }}>
+          style={{ width: "100%", gap: "10px", padding: "2rem" }}
+        >
           <h2 className="prodpage_thought_inner">Roller Chains</h2>
           <span>
             SINGLE STRAND - SIMPLEX&nbsp;&nbsp;&nbsp;&nbsp; BRITISH STANDARD

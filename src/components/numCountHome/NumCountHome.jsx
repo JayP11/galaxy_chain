@@ -42,7 +42,7 @@ const NumCountHome = () => {
       <div
         className=""
         style={{
-          backgroundImage: `url(${images.chain_img})`,
+          backgroundImage: `url(${images.chain_img_bg})`,
           backgroundSize: "cover",
           height: "100%",
         }}

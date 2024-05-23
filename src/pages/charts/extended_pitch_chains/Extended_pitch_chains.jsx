@@ -17,7 +17,8 @@ const Extended_pitch_chains = () => {
       <div className="ChartDemo_main">
         <div
           className="prodpage_thought_main"
-          style={{ width: "100%", gap: "10px", padding: "2rem" }}>
+          style={{ width: "100%", gap: "10px", padding: "2rem" }}
+        >
           <h2 className="prodpage_thought_inner">Extended Pitch Chains</h2>
           <h4>
             EXTENDED PITCH CHAINS
@@ -25,7 +26,22 @@ const Extended_pitch_chains = () => {
             &nbsp;&nbsp;&nbsp;&nbsp; [ As per ASME B29.100 - 2011 ]
           </h4>
         </div>
-
+        <div className="chart_chainGraph_imgs_main">
+          <div>
+            <img
+              src={images.ExtendedPitchChainImage}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
+          </div>
+          <div>
+            <img
+              src={images.ExtendedPitchChainGraph}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
+          </div>
+        </div>
         {/*  */}
         <div className="table_main">
           <table width="546">

@@ -6,17 +6,25 @@ import NumCountHome from "../../components/numCountHome/NumCountHome";
 import CategorySliderHome from "../../components/categorySliderHome/CategorySliderHome";
 import GetQuoteHome from "../../components/getQuoteHome/GetQuoteHome";
 import { Helmet } from "react-helmet";
+import { useLocation } from "react-router-dom";
+import ReactGA from "react-ga";
 
 const Homepage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
+
   return (
     <>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Galaxy Chain | Home</title>
+        <title>Galaxy Chain Pvt. Ltd.| Home</title>
       </Helmet>
       <div>
         <HomePgHero />

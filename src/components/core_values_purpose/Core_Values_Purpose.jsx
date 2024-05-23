@@ -29,21 +29,36 @@ const Core_Values_Purpose = () => {
             className="core_purpose_head_img"
           />
         </div>
+        {/* <p
+          style={{
+            width: "100%",
+            textAlign: "center",
+            paddingBottom: "2rem",
+            lineHeight: "1.3",
+            fontSize: "18px",
+            fontWeight: "700",
+            letterSpacing: "1px",
+          }}
+        >
+          Galaxy chains believes in Innovating, Elevating and Excelling the
+          Industries globally with high quality roller and conveyor chains.
+        </p> */}
       </div>
       <div className="core_purpose_main_flex">
         <div className="core_purpose_inner_flex">
           <img src={images.core_img1} alt="" />
           <p className="core_img_text">
-            QUALITY <br />
-            ASSURANCE
+            Relentless
+            <br />
+            Quality
           </p>
         </div>
 
         <div className="core_purpose_inner_flex">
           <img src={images.core_img2} alt="" />
           <p className="core_img_text">
-            CUSTOMER <br />
-            SATISFACTION
+            CUSTOMER -<br />
+            Centric Approach
           </p>
         </div>
 

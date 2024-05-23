@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./BLSeriesLeaf.css";
 import { Helmet } from "react-helmet";
+import images from "../../../constants/images";
 
 const BLSeriesLeaf = () => {
   useEffect(() => {
@@ -14,7 +15,8 @@ const BLSeriesLeaf = () => {
       <div className="ChartDemo_main">
         <div
           className="prodpage_thought_main"
-          style={{ width: "100%", gap: "10px", padding: "2rem" }}>
+          style={{ width: "100%", gap: "10px", padding: "2rem" }}
+        >
           <h2 className="prodpage_thought_inner">Leaf Chains</h2>
           <span>
             BL Series
@@ -24,7 +26,22 @@ const BLSeriesLeaf = () => {
             ASME B29.8 ]
           </span>
         </div>
-
+        <div className="chart_chainGraph_imgs_main">
+          <div>
+            <img
+              src={images.LeafChain}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
+          </div>
+          <div>
+            <img
+              src={images.LeafChainGraph}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
+          </div>
+        </div>
         {/*  */}
         <div className="table_main">
           <table width="571">

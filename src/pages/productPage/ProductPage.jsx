@@ -4,14 +4,12 @@ import images from "../../constants/images";
 import { Helmet } from "react-helmet";
 import ReactModal from "react-modal";
 import { Link } from "react-router-dom";
-import { IoChevronBackCircle } from "react-icons/io5";
-import Navbar from "../../common/navbar/Navbar";
 
 const ProductPage = () => {
   const [getchild, setchild] = useState([]);
   const [getColor, setColor] = useState(1);
   const [getcondition, SetCondition] = useState(false);
-  const [getModal, setModal] = useState(false);
+  const [getRollerLine, setRollerLine] = useState("");
 
   const customStyles = {
     content: {
@@ -194,7 +192,7 @@ const ProductPage = () => {
         },
         {
           id: 10,
-          img: require("../../assets/Other10.png"),
+          img: require("../../assets/Other10.jpg"),
         },
         {
           id: 11,
@@ -202,11 +200,11 @@ const ProductPage = () => {
         },
         {
           id: 12,
-          img: require("../../assets/Other12.png"),
+          img: require("../../assets/Other12.jpg"),
         },
         {
           id: 13,
-          img: require("../../assets/Other13.png"),
+          img: require("../../assets/Other13.jpg"),
         },
         {
           id: 14,
@@ -216,10 +214,10 @@ const ProductPage = () => {
           id: 15,
           img: require("../../assets/Other15.png"),
         },
-        {
-          id: 16,
-          img: require("../../assets/Other16.png"),
-        },
+        // {
+        //   id: 16,
+        //   img: require("../../assets/Other16.png"),
+        // },
         {
           id: 17,
           img: require("../../assets/Other17.png"),
@@ -274,6 +272,12 @@ const ProductPage = () => {
     },
   ];
 
+  // const location = useLocation();
+
+  // useEffect(() => {
+  //   ReactGA.pageview(location.pathname + location.search);
+  // }, [location]);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -281,7 +285,7 @@ const ProductPage = () => {
   return (
     <>
       <Helmet>
-        <title>Galaxy Chain | Our Products</title>
+        <title>Galaxy Chain Pvt. Ltd.| Our Products</title>
       </Helmet>
       <div style={{ background: "#F6F6F6" }}>
         <div className="prodpage_thought_main">
@@ -312,6 +316,13 @@ const ProductPage = () => {
                   setchild(item.list);
                   setColor(item.id);
                   SetCondition(true);
+                  {
+                    item.id == 1
+                      ? setRollerLine(
+                          "We makes these chains upto NanoPlex ( 9 Strands), Please share your Enquiry."
+                        )
+                      : setRollerLine("");
+                  }
                 }}>
                 <p>{item.name}</p>
               </div>
@@ -326,299 +337,103 @@ const ProductPage = () => {
           />
         </div>
 
-        <div className="propage_img_block">
+        <div className="propage_img_block" style={{ gap: "3rem" }}>
           {getcondition === true ? (
             <>
-              {getchild.map((item, index) => {
-                return (
-                  <Link to={item.link} style={{ cursor: "pointer" }}>
-                    <div className="propage_name_main">
-                      <div
-                        style={{
-                          color: "var(--color-blue)",
-                          fontWeight: "800",
-                        }}>
-                        {item.name}
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                  gap: "1rem",
+                }}>
+                {getchild.map((item, index) => {
+                  return (
+                    <>
+                      <div>
+                        <Link to={item.link} style={{ cursor: "pointer" }}>
+                          <div className="propage_name_main">
+                            <div
+                              style={{
+                                color: "var(--color-blue)",
+                                fontWeight: "800",
+                              }}>
+                              {item.name}
+                            </div>
+                          </div>
+                          <div className="propage_img_main">
+                            <img
+                              src={item.img}
+                              alt=""
+                              style={{
+                                height: "100%",
+                                width: "100%",
+                                objectFit: "contain",
+                                background: "white",
+                              }}
+                            />
+                          </div>
+                          <div className="propage_name_main">
+                            <div>{item.category}</div>
+                          </div>
+                        </Link>
                       </div>
-                    </div>
-                    <div className="propage_img_main">
-                      <img
-                        src={item.img}
-                        alt=""
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          objectFit: "contain",
-                          background: "white",
-                        }}
-                      />
-                    </div>
-                    <div className="propage_name_main">
-                      <div>{item.category}</div>
-                    </div>
-                  </Link>
-                );
-              })}
+                    </>
+                  );
+                })}
+              </div>
+              <h1 className="rollerLineH1">{getRollerLine}</h1>
             </>
           ) : (
             <>
-              {category1.map((item, index) => {
-                return (
-                  <Link to={item.link} style={{ cursor: "pointer" }}>
-                    <div className="propage_name_main">
-                      <div
-                        style={{
-                          color: "var(--color-blue)",
-                          fontWeight: "800",
-                        }}>
-                        {item.name}
-                      </div>
-                    </div>
-                    <div className="propage_img_main">
-                      <img
-                        src={item.img}
-                        alt=""
-                        style={{
-                          height: "100%",
-                          width: "100%",
-                          objectFit: "contain",
-                          background: "white",
-                        }}
-                      />
-                    </div>
-                    <div className="propage_name_main">
-                      <div>{item.category}</div>
-                    </div>
-                  </Link>
-                );
-              })}
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  flexWrap: "wrap",
+                  gap: "1rem",
+                }}>
+                {category1.map((item, index) => {
+                  return (
+                    <>
+                      <Link to={item.link} style={{ cursor: "pointer" }}>
+                        <div className="propage_name_main">
+                          <div
+                            style={{
+                              color: "var(--color-blue)",
+                              fontWeight: "800",
+                            }}>
+                            {item.name}
+                          </div>
+                        </div>
+                        <div className="propage_img_main">
+                          <img
+                            src={item.img}
+                            alt=""
+                            style={{
+                              height: "100%",
+                              width: "100%",
+                              objectFit: "contain",
+                              background: "white",
+                            }}
+                          />
+                        </div>
+                        <div className="propage_name_main">
+                          <div>{item.category}</div>
+                        </div>{" "}
+                      </Link>
+                    </>
+                  );
+                })}
+              </div>
+              <h1 className="rollerLineH1">
+                We makes these chains upto NanoPlex ( 9 Strands), Please share
+                your Enquiry.
+              </h1>
             </>
           )}
         </div>
       </div>
-      {/* <ReactModal
-        isOpen={getModal}
-        onRequestClose={() => {
-          setModal(false);
-        }}
-        style={customStyles}>
-        <Navbar />
-        <div className="ChartDemo_main">
-          <div
-            className="chart_head_main"
-            style={{ letterSpacing: "1px", lineHeight: "1.4" }}>
-            <div
-              style={{ cursor: "pointer" }}
-              onClick={() => {
-                setModal(false);
-              }}>
-              <div className="chart_name_head_main">
-                <div
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.5rem",
-                  }}>
-                  {" "}
-                  <IoChevronBackCircle
-                    style={{ fontSize: "24px", color: "var(--color-white)" }}
-                  />
-                  <h1>Roller Chains</h1>
-                </div>
-              </div>
-            </div>
-            <h3>BRITISH STANDARD</h3>
-            <span>[As per BS 228 / DIN 8187 / IS 2403 / ISO 606]</span>
-          </div>
-          <div className="table_main">
-            <table width="418">
-              <tbody>
-                <tr>
-                  <td rowspan="3" width="26">
-                    CHAIN NO.
-                  </td>
-                  <td rowspan="2" width="22">
-                    PITCH
-                  </td>
-                  <td rowspan="2" width="26">
-                    ROLLER
-                  </td>
-                  <td rowspan="2" width="22">
-                    WIDTH
-                  </td>
-                  <td colspan="13" width="275">
-                    ATTACHMENT&nbsp;&nbsp; DIMENSION
-                  </td>
-                  <td rowspan="2" width="45">
-                    BREAKING LOAD
-                  </td>
-                </tr>
-                <tr>
-                  <td rowspan="2">S</td>
-                  <td rowspan="2">Wp</td>
-                  <td rowspan="2">N</td>
-                  <td rowspan="2">O</td>
-                  <td rowspan="2">Ti</td>
-                  <td rowspan="2">T</td>
-                  <td rowspan="2">C</td>
-                  <td rowspan="2">X</td>
-                  <td rowspan="2">Dp</td>
-                  <td rowspan="2">Lp</td>
-                  <td rowspan="2">C1</td>
-                  <td rowspan="2">Xs</td>
-                  <td rowspan="2">L1</td>
-                </tr>
-                <tr>
-                  <td>P</td>
-                  <td>Dr</td>
-                  <td>W</td>
-                  <td>KN.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MIN.</td>
-                </tr>
-                <tr>
-                  <td>10B-1</td>
-                  <td>15.88</td>
-                  <td>10.16</td>
-                  <td>9.65</td>
-                  <td>10.31</td>
-                  <td>14.60</td>
-                  <td>14.10</td>
-                  <td>5.30</td>
-                  <td>1.65</td>
-                  <td>1.65</td>
-                  <td>15.90</td>
-                  <td>23.80</td>
-                  <td>5.08</td>
-                  <td>21.20</td>
-                  <td>15.90</td>
-                  <td>23.70</td>
-                  <td>11.88</td>
-                  <td>22.27</td>
-                </tr>
-                <tr>
-                  <td>12B-1</td>
-                  <td>19.05</td>
-                  <td>12.07</td>
-                  <td>11.68</td>
-                  <td>13.46</td>
-                  <td>16.00</td>
-                  <td>16.00</td>
-                  <td>6.40</td>
-                  <td>1.80</td>
-                  <td>1.80</td>
-                  <td>19.05</td>
-                  <td>25.80</td>
-                  <td>5.72</td>
-                  <td>24.18</td>
-                  <td>17.90</td>
-                  <td>26.20</td>
-                  <td>14.28</td>
-                  <td>28.94</td>
-                </tr>
-                <tr>
-                  <td>16B-1</td>
-                  <td>25.40</td>
-                  <td>15.88</td>
-                  <td>17.02</td>
-                  <td>15.90</td>
-                  <td>19.70</td>
-                  <td>19.00</td>
-                  <td>6.40</td>
-                  <td>3.90</td>
-                  <td>3.10</td>
-                  <td>25.40</td>
-                  <td>37.40</td>
-                  <td>8.28</td>
-                  <td>38.00</td>
-                  <td>26.00</td>
-                  <td>35.00</td>
-                  <td>19.08</td>
-                  <td>60.04</td>
-                </tr>
-                <tr>
-                  <td>20B-1</td>
-                  <td>31.75</td>
-                  <td>19.05</td>
-                  <td>19.56</td>
-                  <td>19.85</td>
-                  <td>25.80</td>
-                  <td>25.25</td>
-                  <td>8.40</td>
-                  <td>4.50</td>
-                  <td>3.50</td>
-                  <td>31.75</td>
-                  <td>42.85</td>
-                  <td>10.19</td>
-                  <td>44.00</td>
-                  <td>37.75</td>
-                  <td>42.00</td>
-                  <td>23.81</td>
-                  <td>95.16</td>
-                </tr>
-                <tr>
-                  <td>24B-1</td>
-                  <td>38.10</td>
-                  <td>25.40</td>
-                  <td>25.40</td>
-                  <td>26.70</td>
-                  <td>33.00</td>
-                  <td>28.00</td>
-                  <td>10.50</td>
-                  <td>6.15</td>
-                  <td>4.90</td>
-                  <td>38.10</td>
-                  <td>51.85</td>
-                  <td>14.62</td>
-                  <td>57.30</td>
-                  <td>38.00</td>
-                  <td>60.00</td>
-                  <td>28.58</td>
-                  <td>160.10</td>
-                </tr>
-                <tr>
-                  <td>28B-1</td>
-                  <td>44.45</td>
-                  <td>27.94</td>
-                  <td>30.99</td>
-                  <td>28.58</td>
-                  <td>36.20</td>
-                  <td>38.00</td>
-                  <td>13.10</td>
-                  <td>6.60</td>
-                  <td>6.00</td>
-                  <td>44.45</td>
-                  <td>57.10</td>
-                  <td>15.89</td>
-                  <td>68.90</td>
-                  <td>45.00</td>
-                  <td>65.00</td>
-                  <td>33.33</td>
-                  <td>200.12</td>
-                </tr>
-                <tr>
-                  <td>32B-1</td>
-                  <td>50.80</td>
-                  <td>29.21</td>
-                  <td>30.99</td>
-                  <td>31.75</td>
-                  <td>41.00</td>
-                  <td>44.50</td>
-                  <td>13.10</td>
-                  <td>6.60</td>
-                  <td>6.00</td>
-                  <td>50.80</td>
-                  <td>68.50</td>
-                  <td>17.80</td>
-                  <td>70.50</td>
-                  <td>50.80</td>
-                  <td>77.00</td>
-                  <td>38.10</td>
-                  <td>250.16</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>{" "}
-        </div>
-      </ReactModal> */}
     </>
   );
 };

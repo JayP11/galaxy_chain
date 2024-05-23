@@ -31,13 +31,13 @@
     rgba(22, 42, 131, 1) 35%,
     rgba(22, 42, 131, 0.49343487394957986) 100%
   );
-  /* background-color: rgb(22, 42, 131); */
 }
 
 .home_slider_img_txt {
   color: var(--color-white);
-  font-size: 16px;
   font-weight: 600;
+  font-size: 23px;
+  background: #203186;
 }
 
 @media screen and (max-width: 1080px) {
@@ -57,6 +57,8 @@
     width: 100% !important;
   }
 }
+
+/*  */
 
 /* .Industries_We_Empower_main {
   margin: 0 auto;

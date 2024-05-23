@@ -11,12 +11,8 @@ const Navbar = () => {
     <div style={{ boxShadow: "rgba(0, 0, 0, 0.2) 0px 18px 50px -10px" }}>
       <div className="nav-main-nav">
         <nav className="Navbar_main">
-          <Link to="/" style={{ height: "100px", width: "100px" }}>
-            <img
-              src={images.gc_logo}
-              alt=""
-              style={{ height: "100%", width: "100%" }}
-            />
+          <Link to="/">
+            <img src={images.gc_logo} alt="" style={{ width: "200px" }} />
           </Link>
           <div className="navbar_links_main">
             <div className="link_decor_nav">
@@ -28,7 +24,8 @@ const Navbar = () => {
                     location.pathname === "/" ? "var(--color-blue)" : "black",
                   // fontWeight: "600",
                   fontWeight: location.pathname === "/" ? "600" : "500",
-                }}>
+                }}
+              >
                 Home
               </Link>
             </div>
@@ -42,7 +39,8 @@ const Navbar = () => {
                       ? "var(--color-blue)"
                       : "black",
                   fontWeight: location.pathname === "/About" ? "600" : "500",
-                }}>
+                }}
+              >
                 About
               </Link>
             </div>
@@ -57,7 +55,8 @@ const Navbar = () => {
                       : "black",
                   fontWeight:
                     location.pathname === "/ProductPage" ? "600" : "500",
-                }}>
+                }}
+              >
                 Products
               </Link>
             </div>
@@ -109,7 +108,8 @@ const Navbar = () => {
                       : "black",
                   fontWeight: location.pathname === "/Contact" ? "600" : "500",
                   // fontWeight: "600",
-                }}>
+                }}
+              >
                 Contact
               </Link>
             </div>
@@ -135,7 +135,8 @@ const Navbar = () => {
                 <Link
                   to={"/"}
                   onClick={() => setToggleMenu(false)}
-                  className="mobile-nav-link">
+                  className="mobile-nav-link"
+                >
                   Home
                 </Link>
               </li>
@@ -143,7 +144,8 @@ const Navbar = () => {
                 <Link
                   to="/About"
                   className="mobile-nav-link"
-                  onClick={() => setToggleMenu(false)}>
+                  onClick={() => setToggleMenu(false)}
+                >
                   About
                   <i className="fa fa-caret-down"></i>
                 </Link>
@@ -152,7 +154,8 @@ const Navbar = () => {
                 <Link
                   to="/ProductPage"
                   className="mobile-nav-link"
-                  onClick={() => setToggleMenu(false)}>
+                  onClick={() => setToggleMenu(false)}
+                >
                   Products
                   <i className="fa fa-caret-down"></i>
                 </Link>
@@ -182,7 +185,8 @@ const Navbar = () => {
                 <Link
                   to={"/Contact"}
                   onClick={() => setToggleMenu(false)}
-                  className="mobile-nav-link">
+                  className="mobile-nav-link"
+                >
                   Contact
                 </Link>
               </li>

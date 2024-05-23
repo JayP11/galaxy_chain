@@ -117,7 +117,7 @@ const CategorySliderHome = () => {
               <div className="cat_desc_part">
                 <p className="cat_desc">Extended</p>
 
-                <p className="cat_desc">Peach Chains</p>
+                <p className="cat_desc">Pitch Chains</p>
               </div>
             </div>
           </Slider>
@@ -179,7 +179,7 @@ const CategorySliderHome = () => {
             <div className="cat_desc_part">
               <p className="cat_desc">Extended</p>
 
-              <p className="cat_desc">Peach Chains</p>
+              <p className="cat_desc">Pitch Chains</p>
             </div>
           </div>
         </div>

@@ -17,15 +17,31 @@ const Single_simplex_roller_american = () => {
       <div className="ChartDemo_main">
         <div
           className="prodpage_thought_main"
-          style={{ width: "100%", gap: "10px", padding: "2rem" }}>
+          style={{ width: "100%", gap: "10px", padding: "2rem" }}
+        >
           <h2 className="prodpage_thought_inner">Roller Chains</h2>
           <span>
             SINGLE STRAND - SIMPLEX&nbsp;&nbsp;&nbsp;&nbsp; AMERICAN STANDARD
-            &nbsp;&nbsp;&nbsp;&nbsp; [As per BS 228 / DIN 8187 / IS 2403 / ISO
-            606]
+            &nbsp;&nbsp;&nbsp;&nbsp; [As per ANSI B-29.1 / DIN 8188 / IS 2403 /
+            ISO 606]
           </span>
         </div>
-
+        <div className="chart_chainGraph_imgs_main">
+          <div>
+            <img
+              src={images.RollerChainSimplex}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
+          </div>
+          <div>
+            <img
+              src={images.RollerChainSimplexGraph}
+              alt=""
+              className="chart_chainGraph_imgs_inner"
+            />
+          </div>
+        </div>
         {/*  */}
         <div className="table_main ChartDemo_main_roller_american">
           <table width="864">

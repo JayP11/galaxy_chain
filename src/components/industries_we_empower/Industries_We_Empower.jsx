@@ -57,33 +57,75 @@ const Industries_We_Empower = () => {
       <div style={{ paddingLeft: "1rem", paddingRight: "1rem" }}>
         <Slider {...settings}>
           <div className="home_slider_card_main">
-            <img
-              src={images.home_slider_img2}
-              alt=""
-              className="home_slider_img"
-            />
+            <img src={images.ind1} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Agriculture & Harvester</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind2} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Food Industries</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind3} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Material Handling Machinery</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind4} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Road Consturction Machinery</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind5} alt="" className="home_slider_img" />
             <div className="home_slider_img_inner_main">
               <p className="home_slider_img_txt">Power Plant</p>
             </div>
           </div>
           <div className="home_slider_card_main">
-            <img
-              src={images.home_slider_img1}
-              alt=""
-              className="home_slider_img"
-            />
+            <img src={images.ind6} alt="" className="home_slider_img" />
             <div className="home_slider_img_inner_main">
-              <p className="home_slider_img_txt">Power Plant</p>
+              <p className="home_slider_img_txt">Cement Plant</p>
             </div>
           </div>
           <div className="home_slider_card_main">
-            <img
-              src={images.home_slider_img3}
-              alt=""
-              className="home_slider_img"
-            />
+            <img src={images.ind7} alt="" className="home_slider_img" />
             <div className="home_slider_img_inner_main">
-              <p className="home_slider_img_txt">Power Plant</p>
+              <p className="home_slider_img_txt">Steel Plant</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind8} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Fertilizer</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind9} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Tobacco Industries</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind10} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Palm oil Industries</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind11} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">LPG Bottling Plants</p>
+            </div>
+          </div>
+          <div className="home_slider_card_main">
+            <img src={images.ind12} alt="" className="home_slider_img" />
+            <div className="home_slider_img_inner_main">
+              <p className="home_slider_img_txt">Forged Link Chains</p>
             </div>
           </div>
         </Slider>
@@ -101,9 +143,11 @@ export default Industries_We_Empower;
 //   return (
 //     <div className="Industries_We_Empower_main">
 //       <div>
+//         {/* <div className="heading"> */}
 //         <div className="heading">
 //           <h1>Industries We Empower</h1>
 //         </div>
+
 //         <div className="underline"></div>
 //       </div>
 //       <div className="industry_box_top">
