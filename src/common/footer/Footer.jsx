@@ -5,7 +5,6 @@ import images from "../../constants/images";
 
 import { FaSquarePhone, FaWhatsapp } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { Image } from "@react-pdf/renderer";
 
 const Footer = () => {
   return (
@@ -20,7 +19,8 @@ const Footer = () => {
                 marginLeft: "0px",
                 marginTop: "0px",
                 marginBottom: "1rem",
-              }}></div>
+              }}
+            ></div>
 
             <div className="links_sec_footer_inner">
               <Link to="/" className="link_decor_footer">
@@ -45,7 +45,8 @@ const Footer = () => {
                   className="btn btn_catalogue"
                   style={{
                     padding: "10px 24px",
-                  }}>
+                  }}
+                >
                   Download Catalogue
                 </a>
               </div>
@@ -55,7 +56,8 @@ const Footer = () => {
                   className="btn btn_getintouch"
                   style={{
                     padding: "10px 43px",
-                  }}>
+                  }}
+                >
                   GET IN TOUCH
                 </Link>
                 {/* <h4 className="footer_link_color">Contact us</h4> */}
@@ -73,7 +75,8 @@ const Footer = () => {
               marginLeft: "0px",
               marginTop: "0px",
               marginBottom: "1rem",
-            }}></div>
+            }}
+          ></div>
 
           <div>
             <p>
@@ -85,14 +88,16 @@ const Footer = () => {
           </div>
           <div className="footer_ph_details">
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
                   href="tel:919099932799"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   +91 90999 32799
                 </a>
                 {/* &nbsp; /&nbsp;
@@ -106,26 +111,30 @@ const Footer = () => {
             </div>
 
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
                   href="tel: 02827252217"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   02827 252217
                 </a>
                 &nbsp; /&nbsp;
                 <a
                   href="tel:02827252218"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   02827 252218
                 </a>
               </div>
             </div>
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <MdEmail />
               <a href="mailto:galaxy@galaxychains.com" className="link_decor">
                 galaxy@galaxychains.com
@@ -147,7 +156,8 @@ const Footer = () => {
               marginLeft: "0px",
               marginTop: "0px",
               marginBottom: "1rem",
-            }}></div>
+            }}
+          ></div>
           <div>
             <p>
               Shapar Industrial Zone, <br />
@@ -158,14 +168,16 @@ const Footer = () => {
           </div>
           <div className="footer_ph_details">
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
                   href="tel:919099932799"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   +91 90999 32799
                 </a>
                 {/* &nbsp; /&nbsp;
@@ -179,30 +191,35 @@ const Footer = () => {
             </div>
 
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <div>
                 <FaSquarePhone />
               </div>
               <div>
                 <a
                   href="tel: 02827252217"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   02827 252217
                 </a>
                 &nbsp; /&nbsp;
                 <a
                   href="tel:02827252218"
-                  className="link_decor footer_link_color">
+                  className="link_decor footer_link_color"
+                >
                   02827 252218
                 </a>
               </div>
             </div>
             <div
-              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}>
+              style={{ display: "flex", gap: "0.5rem", alignItems: "center" }}
+            >
               <MdEmail />
               <a
                 href="mailto:galaxy@galaxyconveyors.com"
-                className="link_decor">
+                className="link_decor"
+              >
                 galaxy@galaxyconveyors.com
               </a>
             </div>
@@ -222,7 +239,8 @@ const Footer = () => {
       <div className="f-link-btn">
         <a
           href="http://api.whatsapp.com/send?phone=9099932789&text=Let%27s%20Get%20in%20Touch%20with%20Galaxy%20Chains."
-          target="_blank">
+          target="_blank"
+        >
           <FaWhatsapp />
         </a>
       </div>

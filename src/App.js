@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Homepage from "./pages/homepage/Homepage";
 import Navbar from "./common/navbar/Navbar";
@@ -27,7 +27,6 @@ import LLSeriesLeaf from "./pages/charts/lLSeriesLeaf/LLSeriesLeaf";
 import BLSeriesLeaf from "./pages/charts/bLSeriesLeaf/BLSeriesLeaf";
 import ALSeriesLeaf from "./pages/charts/aLSeriesLeaf/ALSeriesLeaf";
 import ReactGA from "react-ga";
-import { useEffect } from "react";
 
 function App() {
   // useEffect(() => {

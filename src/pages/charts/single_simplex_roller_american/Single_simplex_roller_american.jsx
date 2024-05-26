@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import "./Single_simplex_roller_american.css";
 import { Link } from "react-router-dom";
 import { Helmet } from "react-helmet";
-import { IoChevronBackCircle } from "react-icons/io5";
 import images from "../../../constants/images";
 
 const Single_simplex_roller_american = () => {
